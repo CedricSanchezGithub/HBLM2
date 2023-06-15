@@ -8,7 +8,10 @@ header {
   border-radius: 30px;
   padding-bottom: 50px;
   background: rgb(238, 238, 238);
-
+  @media only screen and (max-width: 900px) {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
   .ligue {
     position: absolute;
     left: 100px;
@@ -24,7 +27,14 @@ header {
     top: 100px;
     width: 200px;
     font-size: 1.6rem;
-    // transform: translate(-50%);
+    i {
+      transition: transform 0.2s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+      // transform: translate(-50%);
+    }
   }
   .logo {
     width: 300px;
@@ -45,16 +55,11 @@ header {
       font-size: 1.6rem;
       user-select: none;
       font-weight: bold;
-      li {
+      li:not(:first-child) {
         transition: transform 0.2s;
-      }
-      li:hover {
-        transform: scale(1.1);
-      }
-      .acceuil {
         position: relative;
         &::after {
-          left: 0;
+          opacity: 0;
           top: -5px;
           position: absolute;
           content: "";
@@ -62,7 +67,27 @@ header {
           height: 5px;
           background: var.$color1;
           border-radius: 20px;
+          transition: all 0.2s ease;
+          left: -100px;
+          opacity: 0;
         }
+        &:hover::after {
+          left: 0;
+          opacity: 1;
+        }
+      }
+    }
+    .acceuil {
+      position: relative;
+      &::after {
+        left: 0;
+        top: -5px;
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 5px;
+        background: var.$color1;
+        border-radius: 20px;
       }
     }
   }
