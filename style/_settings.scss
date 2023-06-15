@@ -18,6 +18,10 @@ a {
   text-decoration: none;
   color: black;
 }
+body {
+  background: rgb(224, 224, 224);
+  min-height: 200vh;
+}
 
 @mixin center {
   display: flex;
