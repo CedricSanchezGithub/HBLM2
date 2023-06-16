@@ -68,8 +68,7 @@ header .logo {
   }
 }
 header .logo:hover {
-  scale: 1.1;
-  rotate: -20deg;
+  rotate: 20deg;
 }
 header .menu {
   position: relative;
