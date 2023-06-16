@@ -11,16 +11,16 @@ $color1: rgb(241, 230, 13);
   margin: 0;
   box-sizing: border-box;
   list-style: none;
-  max-width: 1300px;
   margin: 0 auto;
+  max-width: 2000px;
+}
+body {
+  background: url('../layouts/bg.jpg') center/cover fixed;
+  min-height: 200vh;
 }
 a {
   text-decoration: none;
   color: black;
-}
-body {
-  background: rgb(224, 224, 224);
-  min-height: 200vh;
 }
 
 @mixin center {

@@ -6,6 +6,8 @@ header {
   display: grid;
   grid-template-columns: 1fr 5fr;
   background: rgb(233, 233, 233);
+  opacity: 0.8;
+
   @media only screen and (max-width: 1040px) {
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: none;
