@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+* body .equipes {
+  display: flex;
+  opacity: 0;
+  transform: translateY(-3000px);
+  justify-content: space-around;
+  padding: 50px;
+  margin: 0 auto;
+  background: rgb(224, 224, 224);
+  font-size: 1.6rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  text-transform: uppercase;
+}
+* body .equipes li:first-child {
+  font-weight: bold;
+  padding-bottom: 10px;
+}/*# sourceMappingURL=style.css.map */

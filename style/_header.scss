@@ -69,12 +69,19 @@ header {
       li:nth-child(2) {
         position: relative;
         .equipes {
-          position: absolute;
-          display: flex;
-          flex-direction: column;
-          width: 110%;
-          margin: 20px 0;
-          background: rgb(233, 233, 233);
+          display: none;
+          transform: translateY(-3000px);
+          justify-content: space-around;
+          padding: 50px;
+          margin: 0 auto;
+          background: rgb(224, 224, 224);
+          font-size: 1.6rem;
+          user-select: none;
+          text-transform: uppercase;
+          li:first-child {
+            font-weight: bold;
+            padding-bottom: 10px;
+          }
         }
       }
       li:not(:first-child) {
