@@ -6,8 +6,6 @@
 }
 * body .equipes {
   display: flex;
-  opacity: 0;
-  transform: translateY(-3000px);
   justify-content: space-around;
   padding: 50px;
   margin: 0 auto;
