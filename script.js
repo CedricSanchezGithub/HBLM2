@@ -16,16 +16,15 @@
 
 // image.addEventListener('mouseenter', crisLion);
 
-const header = document.querySelector(".header");
+const header = document.querySelector("header");
 const logo = document.querySelector(".logo");
-
+const menu = document.querySelector(".menu");
 window.addEventListener("scroll", () => {
-    console.log(scrollY);
-  if (window.scrollY > 100) {
-    header.style.height = "45px";
-    logo.style.display = "none";
-} else if (window.scrollY === 0) {
-    header.style.height = "210px";
-    logo.style.display = "block";
+  console.log(scrollY);
+  if (window.scrollY > 200) {
+    header.style.transform = "translateY(-200px)";
+    header.style.paddingBot = "10px";
+  } else if (window.scrollY === 0) {
+    header.style.transform = "translateY(0)";
   }
 });
