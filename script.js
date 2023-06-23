@@ -15,3 +15,17 @@
 // }
 
 // image.addEventListener('mouseenter', crisLion);
+
+const header = document.querySelector(".header");
+const logo = document.querySelector(".logo");
+
+window.addEventListener("scroll", () => {
+    console.log(scrollY);
+  if (window.scrollY > 100) {
+    header.style.height = "45px";
+    logo.style.display = "none";
+} else if (window.scrollY === 0) {
+    header.style.height = "210px";
+    logo.style.display = "block";
+  }
+});
