@@ -1,6 +1,30 @@
+@use "./settings" as var;
+
+
 section .section1 {
-  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  .infos,
+  .infos2 {
+    border: solid 1px rgb(150, 150, 150);
+    padding: 50px;
+    background: rgb(233, 233, 233);
 
-
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      position: relative;
+      display: inline-block;
+      &::after {
+        left: 0;
+        top: -5px;
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 5px;
+        background: var.$color1;
+        border-radius: 20px;
+      }
+    }
+  }
 }
- 

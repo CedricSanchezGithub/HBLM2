@@ -12,7 +12,7 @@
 }
 
 body {
-  min-height: 200vh;
+  background: rgb(26, 26, 26);
 }
 
 a {
@@ -24,7 +24,7 @@ header {
   background: rgb(233, 233, 233);
   top: 0;
   position: sticky;
-  border-bottom: solid 3px rgb(150, 150, 150);
+  border-bottom: solid 1px rgb(150, 150, 150);
   z-index: 100;
   transition: all 0.2s ease;
 }
@@ -162,5 +162,30 @@ header .menu .acceuil::after {
 }
 
 section .section1 {
-  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+section .section1 .infos,
+section .section1 .infos2 {
+  border: solid 1px rgb(150, 150, 150);
+  padding: 50px;
+  background: rgb(233, 233, 233);
+}
+section .section1 .infos h2,
+section .section1 .infos2 h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+section .section1 .infos h2::after,
+section .section1 .infos2 h2::after {
+  left: 0;
+  top: -5px;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: rgb(241, 230, 13);
+  border-radius: 20px;
 }/*# sourceMappingURL=style.css.map */
