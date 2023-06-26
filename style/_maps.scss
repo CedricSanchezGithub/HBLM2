@@ -1,0 +1,21 @@
+@use "./settings" as var;
+
+.maps {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: var.$color2;
+  margin-top: 50px;
+  border-radius: 70px;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    span {
+      @include var.title;
+      &:after {
+        @include var.after;
+      }
+    }
+  }
+}

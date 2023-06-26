@@ -27,6 +27,7 @@ header {
   border-bottom: solid 1px rgb(150, 150, 150);
   z-index: 100;
   transition: all 0.2s ease;
+  border-radius: 0 0 0 70px;
 }
 header .header {
   position: relative;
@@ -164,6 +165,25 @@ header .menu .acceuil::after {
 section .section1 {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
+  margin-top: 20px;
+  border-radius: 0 70px 70px 0;
+  background-color: #f0f0f0;
+  overflow: hidden;
+}
+section .section1 .maps {
+  background: rgb(233, 233, 233);
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 400px;
+  border: solid 1px rgb(150, 150, 150);
+}
+section .section1 .maps div {
+  border: solid 1px rgb(150, 150, 150);
+}
+section .section1 .maps div iframe {
+  width: 200px;
+  height: 200px;
 }
 section .section1 .infos,
 section .section1 .infos2 {
@@ -180,6 +200,48 @@ section .section1 .infos2 h2 {
 }
 section .section1 .infos h2::after,
 section .section1 .infos2 h2::after {
+  left: 0;
+  top: -5px;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: rgb(241, 230, 13);
+  border-radius: 20px;
+}
+
+section .section2 {
+  background: rgb(233, 233, 233);
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+  border-radius: 70px 0 0 0;
+}
+
+.maps {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: rgb(233, 233, 233);
+  margin-top: 50px;
+  border-radius: 70px;
+}
+.maps div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+.maps div span {
+  font-family: "Quicksand", sans-serif;
+  width: 100%;
+  font-size: 1.6rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.maps div span:after {
   left: 0;
   top: -5px;
   position: absolute;
