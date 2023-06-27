@@ -7,7 +7,6 @@
   margin: 0;
   box-sizing: border-box;
   list-style: none;
-  margin: 0 auto;
   max-width: 2000px;
 }
 
@@ -35,6 +34,7 @@ header .header {
   align-items: center;
   width: 1000px;
   padding: 20px 20px 20px 20px;
+  margin: 0 auto;
 }
 @media only screen and (max-width: 1040px) {
   header .header {
@@ -148,10 +148,11 @@ header .menu ul li:not(:first-child):hover::after {
   left: 0;
   opacity: 1;
 }
-header .menu .acceuil {
+header .menu span {
   position: relative;
+  display: inline-block;
 }
-header .menu .acceuil::after {
+header .menu span::after {
   left: 0;
   top: -5px;
   position: absolute;
@@ -164,7 +165,7 @@ header .menu .acceuil::after {
 
 section .section1 {
   display: grid;
-  grid-template-columns: 25% 37.5% 37.5%;
+  grid-template-columns: 25% 25% 50%;
   margin-top: 20px;
   border-radius: 0 70px 70px 0;
   background-color: rgb(233, 233, 233);
@@ -191,6 +192,7 @@ section .section1 .adressGymnase .adressGymnase2 {
   width: 80%;
   margin: 0;
   padding: 5px;
+  text-align: left;
 }
 section .section1 .adressGymnase .adressGymnase2:after {
   position: absolute;
@@ -209,6 +211,7 @@ section .section1 .adressGymnase .adressGymnase2 .adress {
 section .section1 .infos {
   border-right: 2px solid rgb(150, 150, 150);
   position: relative;
+  font-size: 1.2rem;
 }
 section .section1 .infos:after {
   position: absolute;
@@ -218,9 +221,22 @@ section .section1 .infos:after {
   width: 120px;
   border-radius: 50%;
   top: 50%;
-  right: -60px;
+  right: -62px;
   transform: translateY(-50%);
-  z-index: 200;
+}
+section .section1 .infos a {
+  display: inline-block;
+  padding: 10px 20px;
+  color: black;
+  border: 2px solid rgb(241, 230, 13);
+  background-color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+section .section1 .infos a:hover {
+  background-color: rgb(241, 230, 13);
+  color: white;
 }
 section .section1 .infos,
 section .section1 .infos2 {

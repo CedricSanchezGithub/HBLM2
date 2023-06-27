@@ -1,88 +1,107 @@
 @use "./settings" as var;
 
-section .section1 {
-  display: grid;
-  grid-template-columns: 25% 37.5% 37.5%;
-  margin-top: 20px;
-  border-radius: 0 70px 70px 0;
-  background-color: var.$color2;
-  overflow: hidden;
-  height: 600px;
+section {
+  .section1 {
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    margin-top: 20px;
+    border-radius: 0 70px 70px 0;
+    background-color: var.$color2;
+    overflow: hidden;
+    height: 600px;
 
-  .adressGymnase {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    border-right: dashed 2px var.$color3;
-    border-radius: 0 200px 200px 0;
-
-    .adressGymnase2 {
-      position: relative;
+    .adressGymnase {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      border-radius: 0 160px 160px 0;
-      border: solid 2px var.$color3;
-      border-left: none;
-      height: 80%;
-      width: 80%;
-      margin: 0;
-      padding: 5px;
+      width: 100%;
+      border-right: dashed 2px var.$color3;
+      border-radius: 0 200px 200px 0;
+
+      .adressGymnase2 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 0 160px 160px 0;
+        border: solid 2px var.$color3;
+        border-left: none;
+        height: 80%;
+        width: 80%;
+        margin: 0;
+        padding: 5px;
+        text-align: left;
+        &:after {
+          position: absolute;
+          content: "";
+          background: var.$color3;
+          width: 5px;
+          border-radius: 5px;
+          height: 50px;
+          right: -35px;
+          color: black;
+        }
+        .adress {
+          margin-top: 20px;
+          text-align: center;
+        }
+      }
+    }
+    .infos {
+      border-right: 2px solid var.$color3;
+      position: relative; 
+      font-size: 1.2rem;
       &:after {
         position: absolute;
         content: "";
-        background: var.$color3;
-        width: 5px;
-        border-radius: 5px;
-        height: 50px;
-        right: -35px;
-        color: black;
+        border: 2px solid var.$color3; 
+        height: 120px;
+        width: 120px;
+        border-radius: 50%; 
+        top: 50%; 
+        right: -62px; 
+        transform: translateY(-50%); 
       }
-      .adress {
-        margin-top: 20px;
+
+        a {
+          display: inline-block;
+          padding: 10px 20px;
+          color: black; // Utilisez une couleur de texte foncée pour un bon contraste
+          border: 2px solid var.$color1; // Utilisez une bordure colorée pour ajouter de l'intérêt
+          background-color: white; // Utilisez une couleur d'arrière-plan claire pour contraster avec l'arrière-plan gris
+          text-decoration: none;
+          border-radius: 20px;
+          transition: all 0.3s ease-in-out;
+      
+          &:hover {
+            background-color: var.$color1; // Lorsque vous survolez, changez la couleur d'arrière-plan pour ajouter de l'intérêt
+            color: white; // Changez la couleur du texte en blanc pour contraster avec l'arrière-plan coloré
+          }
+        }
+      
+      
+    }
+
+    .infos,
+    .infos2 {
+      padding: 50px;
+      background: rgb(233, 233, 233);
+
+      h2 {
         text-align: center;
-      }
-    }
-  }
-  .infos {
-    border-right: 2px solid var.$color3;
-    position: relative; // Ajouté pour positionner correctement le ::after
-    &:after {
-      position: absolute;
-      content: "";
-      border: 2px solid var.$color3; // Ajouté pour créer la bordure du cercle
-      height: 120px;
-      width: 120px;
-      border-radius: 50%; // Modifié pour créer un cercle parfait
-      top: 50%; // Pour centrer verticalement
-      right: -60px; // Pour positionner le cercle entre .infos et .infos2. C'est la moitié de la largeur du cercle.
-      transform: translateY(
-        -50%
-      ); // Pour déplacer le cercle vers le haut de la moitié de sa hauteur
-      z-index: 200;
-    }
-  }
-
-  .infos,
-  .infos2 {
-    padding: 50px;
-    background: rgb(233, 233, 233);
-
-    h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      position: relative;
-      display: inline-block;
-      &::after {
-        left: 0;
-        top: -5px;
-        position: absolute;
-        content: "";
-        width: 100%;
-        height: 5px;
-        background: var.$color1;
-        border-radius: 20px;
+        margin-bottom: 20px;
+        position: relative;
+        display: inline-block;
+        &::after {
+          left: 0;
+          top: -5px;
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 5px;
+          background: var.$color1;
+          border-radius: 20px;
+        }
       }
     }
   }
