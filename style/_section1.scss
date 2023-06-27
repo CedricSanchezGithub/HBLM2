@@ -2,32 +2,70 @@
 
 section .section1 {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-columns: 25% 37.5% 37.5%;
   margin-top: 20px;
   border-radius: 0 70px 70px 0;
-  background-color: #f0f0f0;
+  background-color: var.$color2;
   overflow: hidden;
+  height: 600px;
 
-  .maps {
-    background: rgb(233, 233, 233);
+  .adressGymnase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 400px;
-    border: solid 1px rgb(150, 150, 150);
+    border-right: dashed 2px var.$color3;
+    border-radius: 0 200px 200px 0;
 
-    div {
-      border: solid 1px rgb(150, 150, 150);
-
-      iframe {
-        width: 200px;
-        height: 200px;
+    .adressGymnase2 {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-radius: 0 160px 160px 0;
+      border: solid 2px var.$color3;
+      border-left: none;
+      height: 80%;
+      width: 80%;
+      margin: 0;
+      padding: 5px;
+      &:after {
+        position: absolute;
+        content: "";
+        background: var.$color3;
+        width: 5px;
+        border-radius: 5px;
+        height: 50px;
+        right: -35px;
+        color: black;
+      }
+      .adress {
+        margin-top: 20px;
+        text-align: center;
       }
     }
   }
+  .infos {
+    border-right: 2px solid var.$color3;
+    position: relative; // Ajouté pour positionner correctement le ::after
+    &:after {
+      position: absolute;
+      content: "";
+      border: 2px solid var.$color3; // Ajouté pour créer la bordure du cercle
+      height: 120px;
+      width: 120px;
+      border-radius: 50%; // Modifié pour créer un cercle parfait
+      top: 50%; // Pour centrer verticalement
+      right: -60px; // Pour positionner le cercle entre .infos et .infos2. C'est la moitié de la largeur du cercle.
+      transform: translateY(
+        -50%
+      ); // Pour déplacer le cercle vers le haut de la moitié de sa hauteur
+      z-index: 200;
+    }
+  }
+
   .infos,
   .infos2 {
-    border: solid 1px rgb(150, 150, 150);
     padding: 50px;
     background: rgb(233, 233, 233);
 

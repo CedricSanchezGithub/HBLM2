@@ -11,6 +11,9 @@
     flex-direction: column;
     align-items: center;
     padding: 50px;
+    iframe {
+        width: 100%;
+    }
     span {
       @include var.title;
       &:after {
