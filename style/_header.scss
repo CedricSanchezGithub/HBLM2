@@ -1,12 +1,42 @@
 @use "./settings" as var;
 
 header {
-  background: rgb(233, 233, 233);
   top: 0;
   position: sticky;
   z-index: 100;
   transition: all 0.2s ease;
   border-radius: 0 0 0 70px;
+  height: 100vh;
+  .countdownCountainerCountainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background: var.$color2;
+    color: rgb(10, 10, 10);
+    opacity: 0.8;
+    width: 800px;
+    height: 100px;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    border: solid black 4px;
+    backdrop-filter: blur(2px);
+    margin: 100px auto;
+    .chrono {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.7rem;
+      img {
+        margin-bottom: 5px;
+        width: 50px;
+      }
+    }
+    .countdownCountainer {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  }
   .header {
     position: relative;
     display: grid;
@@ -15,6 +45,7 @@ header {
     width: 1000px;
     padding: 20px 20px 20px 20px;
     margin: 0 auto;
+    background: var.$color4;
 
     @media only screen and (max-width: 1040px) {
       grid-template-rows: repeat(2, 1fr);
@@ -66,6 +97,8 @@ header {
     width: 100%;
     height: 100%;
     text-align: center;
+    color: whitesmoke;
+
     @media only screen and (max-width: 800px) {
       display: none;
     }

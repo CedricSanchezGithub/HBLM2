@@ -1,0 +1,48 @@
+.button-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1d1d1d;
+  }
+  
+  .fill-button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    border: 2px solid #FFF;
+    background: transparent;
+    z-index: 1;
+    border-radius: 20px;
+  }
+  
+  .fill-button:hover {
+    color: #3498db;
+    border-color: #3498db;
+    transition: 0.35s;
+  }
+  
+  .fill-button::before {
+    content: "";
+    background: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: 120%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    z-index: -1;
+    transition: 0.7s;
+  }
+  
+  .fill-button:hover::before {
+    height: 220%;
+  }
+  

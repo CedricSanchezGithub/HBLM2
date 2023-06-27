@@ -16,15 +16,29 @@
 
 // image.addEventListener('mouseenter', crisLion);
 
-const header = document.querySelector("header");
-const logo = document.querySelector(".logo");
-const menu = document.querySelector(".menu");
-window.addEventListener("scroll", () => {
-  console.log(scrollY);
-  if (window.scrollY > 200) {
-    header.style.transform = "translateY(-200px)";
-    header.style.paddingBot = "10px";
-  } else if (window.scrollY === 0) {
-    header.style.transform = "translateY(0)";
-  }
-});
+
+  // Définir la date de fin (année, mois, jour)
+  const endDate = new Date("Sep 8, 2023 00:00:00").getTime();
+
+  // Mettre à jour le compte à rebours toutes les secondes
+  let timer = setInterval(function() {
+    let now = new Date().getTime();
+    let t = endDate - now;
+    
+    if (t >= 0) {
+      var days = Math.floor(t / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+      var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+
+      document.getElementById("countdown").innerHTML = `<p>${days} jours  
+                                                        ${hours} heures et 
+                                                        ${minutes} minutes</p>`;
+    }
+    
+    // Si le compte à rebours est terminé, écrire un texte d'achèvement
+    else {
+      document.getElementById("countdown").innerHTML = "C'est aujourd'hui !";
+      clearInterval(timer);
+    }
+  }, 1000);
+

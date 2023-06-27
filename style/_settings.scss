@@ -4,9 +4,10 @@
 }
 
 $font1: "Quicksand", sans-serif;
-$color1: rgb(241, 230, 13);
+$color1: rgba(241, 230, 13, 0.795);
 $color2: rgb(233, 233, 233);
 $color3: rgb(150, 150, 150);
+$color4: rgba(0, 0, 0, 0.61);
 
 * {
   padding: 0;
@@ -16,11 +17,13 @@ $color3: rgb(150, 150, 150);
   max-width: 2000px;
 }
 body {
-  background: rgb(26, 26, 26);
+  background: url(../layouts/logoclub/logo-hblm.png) center/cover fixed;
+  font-weight: bold;
+  color: whitesmoke;
 }
 a {
   text-decoration: none;
-  color: black;
+  color: whitesmoke;
 }
 
 @mixin center {
