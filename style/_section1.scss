@@ -3,7 +3,7 @@
 section {
   .section1 {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 300px 60% 20%;
     margin-top: 20px;
     border-radius: 0 70px 70px 0;
     overflow: hidden;
@@ -17,7 +17,9 @@ section {
       width: 100%;
       border-right: dashed 2px var.$color3;
       border-radius: 0 200px 200px 0;
-      background: var.$color2;
+      // background: var.$color2;
+      background: rgb(161,161,170);
+      background: radial-gradient(circle, rgba(161,161,170,1) 25%, rgba(255,255,255,1) 95%);
       
       .adressGymnase2 {
         position: relative;

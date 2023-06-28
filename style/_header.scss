@@ -6,7 +6,9 @@ header {
   .countdownCountainerCountainer {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    background: var.$color2;
+    // background: var.$color2;
+    background: rgb(161,161,170);
+    background: radial-gradient(circle, rgba(161,161,170,1) 6%, rgba(255,255,255,1) 95%);
     color: rgb(10, 10, 10);
     width: 800px;
     height: 100px;
@@ -15,6 +17,7 @@ header {
     border: solid black 4px;
     backdrop-filter: blur(2px);
     margin: 100px auto;
+    opacity: 0.9;
     .chrono {
       display: flex;
       flex-direction: column;

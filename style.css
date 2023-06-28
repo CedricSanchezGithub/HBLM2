@@ -34,7 +34,8 @@ header {
 header .countdownCountainerCountainer {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  background: rgb(233, 233, 233);
+  background: rgb(161, 161, 170);
+  background: radial-gradient(circle, rgb(161, 161, 170) 6%, rgb(255, 255, 255) 95%);
   color: rgb(10, 10, 10);
   width: 800px;
   height: 100px;
@@ -44,6 +45,7 @@ header .countdownCountainerCountainer {
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   margin: 100px auto;
+  opacity: 0.9;
 }
 header .countdownCountainerCountainer .chrono {
   display: flex;
@@ -203,7 +205,7 @@ header .menu span::after {
 
 section .section1 {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 300px 60% 20%;
   margin-top: 20px;
   border-radius: 0 70px 70px 0;
   overflow: hidden;
@@ -217,7 +219,8 @@ section .section1 .adressGymnase {
   width: 100%;
   border-right: dashed 2px rgb(150, 150, 150);
   border-radius: 0 200px 200px 0;
-  background: rgb(233, 233, 233);
+  background: rgb(161, 161, 170);
+  background: radial-gradient(circle, rgb(161, 161, 170) 25%, rgb(255, 255, 255) 95%);
 }
 section .section1 .adressGymnase .adressGymnase2 {
   position: relative;
@@ -320,17 +323,42 @@ section .section1 .infos p {
   border-radius: 20px;
 }
 
-.infos a {
+.infos {
+  text-align: center;
+}
+
+.arrow-link {
+  position: relative;
   display: inline-block;
   padding: 10px 20px;
-  color: #0a0a0a;
-  background-color: rgb(233, 233, 233);
+  background-color: #f1f1f1;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
   text-decoration: none;
-  transition: all 0.4s ease;
+  color: #333;
+  overflow: hidden;
 }
-.infos a:hover {
-  background-color: rgb(14, 14, 14);
-  color: #f0f0f0;
+
+.arrow-link:hover {
+  background-color: #d4d4d4;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #333;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  transform: rotate(-45deg);
+  transition: background-color 0.3s ease;
+}
+
+.arrow-link:hover .arrow {
+  background-color: #fff;
 }/*# sourceMappingURL=style.css.map */
