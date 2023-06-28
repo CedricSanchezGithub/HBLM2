@@ -1,18 +1,13 @@
 @use "./settings" as var;
 
 header {
-  top: 0;
-  position: sticky;
-  z-index: 100;
   transition: all 0.2s ease;
   border-radius: 0 0 0 70px;
-  height: 100vh;
   .countdownCountainerCountainer {
     display: grid;
     grid-template-columns: 1fr 2fr;
     background: var.$color2;
     color: rgb(10, 10, 10);
-    opacity: 0.8;
     width: 800px;
     height: 100px;
     border-radius: 30px;
@@ -35,17 +30,19 @@ header {
       display: flex;
       justify-content: space-evenly;
       align-items: center;
+      span{
+        font-weight: bold;
+      }
     }
   }
   .header {
     position: relative;
-    display: grid;
-    grid-template-columns: 1fr 6fr;
-    align-items: center;
+    display: flex;
     width: 1000px;
     padding: 20px 20px 20px 20px;
     margin: 0 auto;
     background: var.$color4;
+    border-radius: 0 0 50px 50px;
 
     @media only screen and (max-width: 1040px) {
       grid-template-rows: repeat(2, 1fr);
