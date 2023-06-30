@@ -15,11 +15,9 @@
 }
 
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.836)), url(../layouts/logoclub/logo-hblm.png) center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.836)), url(../layouts/bg.jpg) center/cover;
   background-attachment: fixed;
   color: whitesmoke;
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
 }
 
 a {
@@ -34,7 +32,6 @@ header {
 header .countdownCountainerCountainer {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  background: rgb(161, 161, 170);
   background: radial-gradient(circle, rgb(161, 161, 170) 6%, rgb(255, 255, 255) 95%);
   color: rgb(10, 10, 10);
   width: 800px;
@@ -72,8 +69,12 @@ header .header {
   width: 1000px;
   padding: 20px 20px 20px 20px;
   margin: 0 auto;
-  background: rgba(0, 0, 0, 0.61);
+  background: rgb(161, 161, 170);
+  background: radial-gradient(circle, rgb(161, 161, 170) 6%, rgb(255, 255, 255) 95%);
+  border: solid black 4px;
+  border-top: none;
   border-radius: 0 0 50px 50px;
+  opacity: 0.95;
 }
 @media only screen and (max-width: 1040px) {
   header .header {
@@ -128,7 +129,7 @@ header .menu {
   width: 100%;
   height: 100%;
   text-align: center;
-  color: whitesmoke;
+  color: rgb(10, 10, 10);
 }
 @media only screen and (max-width: 800px) {
   header .menu {
@@ -150,26 +151,12 @@ header .menu ul {
 header .menu ul li:nth-child(2) {
   position: relative;
 }
-header .menu ul li:nth-child(2) .equipes {
-  display: none;
-  transform: translateY(-3000px);
-  justify-content: space-around;
-  padding: 50px;
-  margin: 0 auto;
-  background: rgb(224, 224, 224);
-  font-size: 1.6rem;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  text-transform: uppercase;
-}
-header .menu ul li:nth-child(2) .equipes li:first-child {
-  font-weight: bold;
-  padding-bottom: 10px;
-}
 header .menu ul li:not(:first-child) {
   transition: transform 0.2s;
   position: relative;
+}
+header .menu ul li:not(:first-child) a {
+  color: rgb(10, 10, 10);
 }
 header .menu ul li:not(:first-child)::after {
   opacity: 0;
@@ -205,77 +192,19 @@ header .menu span::after {
 
 section .section1 {
   display: grid;
-  grid-template-columns: 300px 60% 20%;
-  margin-top: 20px;
+  grid-template-columns: 33% 33% 33%;
   border-radius: 0 70px 70px 0;
   overflow: hidden;
   height: 600px;
   font-family: "Quicksand", sans-serif;
-}
-section .section1 .adressGymnase {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  border-right: dashed 2px rgb(150, 150, 150);
-  border-radius: 0 200px 200px 0;
-  background: rgb(161, 161, 170);
-  background: radial-gradient(circle, rgb(161, 161, 170) 25%, rgb(255, 255, 255) 95%);
-}
-section .section1 .adressGymnase .adressGymnase2 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 0 200px 200px 0;
-  border: solid 2px rgb(150, 150, 150);
-  border-left: none;
-  height: 80%;
-  width: 80%;
-  margin: 0;
-  padding: 5px;
-  text-align: left;
-}
-section .section1 .adressGymnase .adressGymnase2:after {
-  position: absolute;
-  content: "";
-  background: rgb(150, 150, 150);
-  width: 5px;
-  border-radius: 5px;
-  height: 50px;
-  right: -35px;
-}
-section .section1 .adressGymnase .adressGymnase2 .adress {
-  margin-top: 20px;
-  display: flex;
-  align-items: baseline;
-  gap: 10px;
-  padding-left: 10px;
-}
-section .section1 .adressGymnase .adressGymnase2 .adress a {
-  color: rgb(14, 14, 14);
-}
-section .section1 .adressGymnase .adressGymnase2 .adress i {
-  margin-right: 10px;
-  color: rgb(14, 14, 14);
-}
-section .section1 .adressGymnase .adressGymnase2 .adress p i {
-  visibility: hidden;
-  position: absolute;
-  transform: translateX(-30px);
-  left: 250px;
-  transition: all 0.4s ease-in-out;
-}
-section .section1 .adressGymnase .adressGymnase2 .adress p:hover i {
-  visibility: visible;
-  transform: translateY(0);
+  margin: 0 auto;
+  text-align: start;
 }
 section .section1 .infos {
   font-size: 1.2rem;
-  margin-left: 40px;
+  text-align: left;
 }
 section .section1 .infos p {
-  margin-bottom: 20px;
   font-size: 5rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -323,42 +252,70 @@ section .section1 .infos p {
   border-radius: 20px;
 }
 
-.infos {
-  text-align: center;
+.adressGymnase {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  border-right: dashed 2px rgb(150, 150, 150);
+  border-radius: 0 200px 200px 0;
+  background: rgb(161, 161, 170);
+  background: radial-gradient(circle, rgb(161, 161, 170) 25%, rgb(255, 255, 255) 95%);
 }
-
-.arrow-link {
+.adressGymnase .adressGymnase2 {
   position: relative;
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #f1f1f1;
-  border: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  text-decoration: none;
-  color: #333;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0 200px 200px 0;
+  border: solid 2px rgb(150, 150, 150);
+  border-left: none;
+  height: 80%;
+  width: 80%;
+  margin: 0;
+  padding: 5px;
+  text-align: left;
 }
-
-.arrow-link:hover {
-  background-color: #d4d4d4;
-}
-
-.arrow {
+.adressGymnase .adressGymnase2:after {
   position: absolute;
-  top: 50%;
-  left: 10px;
-  transform: translate(-50%, -50%);
-  width: 20px;
-  height: 20px;
-  background-color: #333;
-  border-top-left-radius: 50%;
-  border-top-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-  transform: rotate(-45deg);
-  transition: background-color 0.3s ease;
+  content: "";
+  background: rgb(150, 150, 150);
+  width: 5px;
+  border-radius: 5px;
+  height: 50px;
+  right: -35px;
+}
+.adressGymnase .adressGymnase2 .adress {
+  margin-top: 20px;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding-left: 10px;
+}
+.adressGymnase .adressGymnase2 .adress a {
+  color: rgb(14, 14, 14);
+}
+.adressGymnase .adressGymnase2 .adress i {
+  margin-right: 10px;
+  color: rgb(14, 14, 14);
+}
+.adressGymnase .adressGymnase2 .adress p i {
+  visibility: hidden;
+  position: absolute;
+  transform: translateX(-30px);
+  left: 250px;
+  transition: all 0.4s ease-in-out;
+}
+.adressGymnase .adressGymnase2 .adress p:hover i {
+  visibility: visible;
+  transform: translateY(0);
 }
 
-.arrow-link:hover .arrow {
-  background-color: #fff;
+body section .section1 .infos .arrow-link {
+  background: radial-gradient(circle, rgb(161, 161, 170) 6%, rgb(255, 255, 255) 95%);
+  padding: 10px 20px;
+  color: black;
+  font-weight: bold;
+  margin-top: 100px;
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */

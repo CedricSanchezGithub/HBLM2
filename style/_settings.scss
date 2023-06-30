@@ -23,10 +23,9 @@ $color5: rgb(14, 14, 14);
 }
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.836)),
-    url(../layouts/logoclub/logo-hblm.png) center/cover;
+    url(../layouts/bg.jpg) center/cover;
   background-attachment: fixed;
   color: whitesmoke;
-  backdrop-filter: blur(3px)
 }
 a {
   text-decoration: none;
