@@ -16,8 +16,9 @@
 
 // image.addEventListener('mouseenter', crisLion);
 
-// Définir la date de fin (année, mois, jour)
 const endDate = new Date("Sep 4, 2023 00:00:00").getTime();
+const burger = document.querySelector(".burgerCountainer");
+const
 
 // Mettre à jour le compte à rebours toutes les secondes
 let timer = setInterval(function () {
@@ -42,3 +43,10 @@ let timer = setInterval(function () {
     clearInterval(timer);
   }
 }, 1000);
+
+
+function burgerMenu () {
+  burger.addEventListener('click', () => {
+    
+  })
+}

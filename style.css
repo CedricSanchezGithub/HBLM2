@@ -318,4 +318,54 @@ body section .section1 .infos .arrow-link {
   font-weight: bold;
   margin-top: 100px;
   border-radius: 10px;
+}
+
+body {
+  background: rgb(10, 10, 10);
+}
+body .burgerCountainer {
+  position: relative;
+  background: whitesmoke;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  margin: 30px;
+}
+body .burgerCountainer .burger {
+  position: absolute;
+  left: 50%;
+  width: 75%;
+  height: 60%;
+  transform: translate(-50%, -50%);
+}
+body .burgerCountainer .burger .burger1 {
+  position: absolute;
+  height: 10px;
+  width: 100%;
+  background: black;
+  border-radius: 10px;
+}
+body .burgerCountainer .burger .burger2 {
+  position: absolute;
+  top: 25px;
+  height: 10px;
+  width: 100%;
+  background: black;
+  border-radius: 10px;
+}
+body .burgerCountainer .burger .burger3 {
+  position: absolute;
+  top: 50px;
+  height: 10px;
+  width: 100%;
+  background: black;
+  border-radius: 10px;
+}
+body .burgerCountainer .burger .burger3 .burger1Translate {
+  transform: rotate(-45deg);
+  top: 25px;
+}
+body .burgerCountainer .burger .burger3 .burger1Translate2 {
+  transform: rotate(-45deg);
+  top: -25px;
 }/*# sourceMappingURL=style.css.map */

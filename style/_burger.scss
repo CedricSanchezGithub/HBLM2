@@ -1,0 +1,49 @@
+body {
+  background: rgb(10, 10, 10);
+  .burgerCountainer {
+    position: relative;
+    background: whitesmoke;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 30px;
+    .burger {
+      position: absolute;
+      left: 50%;
+      width: 75%;
+      height: 60%;
+      transform: translate(-50%, -50%);
+      .burger1 {
+        position: absolute;
+        height: 10px;
+        width: 100%;
+        background: black;
+        border-radius: 10px;
+      }
+      .burger2 {
+        position: absolute;
+        top: 25px;
+        height: 10px;
+        width: 100%;
+        background: black;
+        border-radius: 10px;
+      }
+      .burger3 {
+        position: absolute;
+        top: 50px;
+        height: 10px;
+        width: 100%;
+        background: black;
+        border-radius: 10px;
+        .burger1Translate {
+          transform: rotate(-45deg);
+          top: 25px;
+        }
+        .burger1Translate2 {
+            transform: rotate(-45deg);
+            top: -25px;
+          }
+      }
+    }
+  }
+}
