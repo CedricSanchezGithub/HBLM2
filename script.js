@@ -1,24 +1,22 @@
-// const image = document.querySelector('.logo');
-// let isListening = true;
+const image = document.querySelector('.logo');
+let isListening = true;
 
-// function crisLion() {
-//   if (isListening) {
-//     const audio = new Audio('layouts/lion.mp3');
-//     audio.play();
-//     console.log("rawr");
-//     isListening = false;
+function crisLion() {
+  if (isListening) {
+    const audio = new Audio('layouts/lion.mp3');
+    audio.play();
+    console.log("rawr");
+    isListening = false;
 
-//     setTimeout(() => {
-//       isListening = true;
-//     }, 6000);
-//   }
-// }
+    setTimeout(() => {
+      isListening = true;
+    }, 6000);
+  }
+}
 
-// image.addEventListener('mouseenter', crisLion);
+image.addEventListener('mouseenter', crisLion);
 
 const endDate = new Date("Sep 4, 2023 00:00:00").getTime();
-const burger = document.querySelector(".burgerCountainer");
-const
 
 // Mettre à jour le compte à rebours toutes les secondes
 let timer = setInterval(function () {
@@ -43,10 +41,3 @@ let timer = setInterval(function () {
     clearInterval(timer);
   }
 }, 1000);
-
-
-function burgerMenu () {
-  burger.addEventListener('click', () => {
-    
-  })
-}
