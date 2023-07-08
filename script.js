@@ -23,6 +23,7 @@ let timer = setInterval(function () {
   let now = new Date().getTime();
   let t = endDate - now;
 
+  
   if (t >= 0) {
     var days = Math.floor(t / (1000 * 60 * 60 * 24));
     var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
