@@ -3,18 +3,16 @@
 header {
   transition: all 0.2s ease;
   border-radius: 0 0 0 70px;
+  height: 40vh;
   .countdownCountainerCountainer {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    background: radial-gradient(
-      circle,
-      rgba(161, 161, 170, 1) 6%,
-      rgba(255, 255, 255, 1) 95%
-    );
+    background: 
+      rgba(230, 230, 230);
     color: rgb(10, 10, 10);
     width: 800px;
     height: 100px;
-    border-radius: 30px;
+    border-radius: 300px;
     font-size: 1.3rem;
     border: solid black 4px;
     backdrop-filter: blur(2px);
@@ -47,14 +45,11 @@ header {
     padding: 20px 20px 20px 20px;
     margin: 0 auto;
     background: rgb(161, 161, 170);
-    background: radial-gradient(
-      circle,
-      rgba(161, 161, 170, 1) 6%,
-      rgba(255, 255, 255, 1) 95%
-    );
+    background: 
+      rgba(230, 230, 230, 1);
     border: solid black 4px;
     border-top: none;
-    border-radius: 0 0 50px 50px;
+    border-radius: 0 0 300px 300px;
     opacity: 0.95;
 
     @media only screen and (max-width: 1040px) {

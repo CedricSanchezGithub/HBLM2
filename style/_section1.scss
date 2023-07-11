@@ -2,30 +2,14 @@
 
 section {
   .section1 {
+    height: 60vh;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    border-radius: 0 70px 70px 0;
-    overflow: hidden;
-    height: 600px;
+    grid-template-columns:33% 33% 33%;
     font-family: var.$font1;
-    margin: 0 auto;
-    
-    text-align: start;
-
-    .infos {
-      font-size: 1.2rem;
-      text-align: left;
-
-      p {
-        font-size: 5rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        width: 80%;
-        letter-spacing: 0.05em;
-        line-height: 75px;
-        font-family: var.$font2;
-        text-shadow: 6px 5px 10px black;
-      }
+    text-align: center;
+    &
+    .anchor{
+      border: solid 1px white;
     }
   }
 }

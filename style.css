@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Quicksand";
   src: url(../fonts/Quicksand-VariableFont_wght.ttf);
@@ -25,18 +26,32 @@ a {
   color: whitesmoke;
 }
 
+.scroll-snap {
+  height: 100%; /* Prend toute la hauteur du body */
+  width: 100%;
+  overflow-y: scroll; /* Permet le défilement vertical */
+  scroll-snap-type: y mandatory; /* Définir le type de défilement vertical */
+}
+
+.scroll-snap section {
+  height: 100%; /* Chaque section prend toute la hauteur du conteneur */
+  width: 100%;
+  scroll-snap-align: start;
+}
+
 header {
   transition: all 0.2s ease;
   border-radius: 0 0 0 70px;
+  height: 40vh;
 }
 header .countdownCountainerCountainer {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  background: radial-gradient(circle, rgb(161, 161, 170) 6%, rgb(255, 255, 255) 95%);
+  background: rgb(230, 230, 230);
   color: rgb(10, 10, 10);
   width: 800px;
   height: 100px;
-  border-radius: 30px;
+  border-radius: 300px;
   font-size: 1.3rem;
   border: solid black 4px;
   -webkit-backdrop-filter: blur(2px);
@@ -70,10 +85,10 @@ header .header {
   padding: 20px 20px 20px 20px;
   margin: 0 auto;
   background: rgb(161, 161, 170);
-  background: radial-gradient(circle, rgb(161, 161, 170) 6%, rgb(255, 255, 255) 95%);
+  background: rgb(230, 230, 230);
   border: solid black 4px;
   border-top: none;
-  border-radius: 0 0 50px 50px;
+  border-radius: 0 0 300px 300px;
   opacity: 0.95;
 }
 @media only screen and (max-width: 1040px) {
@@ -191,28 +206,44 @@ header .menu span::after {
 }
 
 section .section1 {
+  height: 60vh;
   display: grid;
   grid-template-columns: 33% 33% 33%;
-  border-radius: 0 70px 70px 0;
-  overflow: hidden;
-  height: 600px;
   font-family: "Quicksand", sans-serif;
-  margin: 0 auto;
-  text-align: start;
+  text-align: center;
 }
-section .section1 .infos {
-  font-size: 1.2rem;
-  text-align: left;
+section .section1 .anchor {
+  border: solid 1px white;
 }
-section .section1 .infos p {
-  font-size: 5rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  width: 80%;
-  letter-spacing: 0.05em;
-  line-height: 75px;
-  font-family: "Montserrat", sans-serif;
-  text-shadow: 6px 5px 10px black;
+
+#section2 {
+  background: white;
+  height: 100vh;
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  padding-top: 100px;
+}
+
+#section3 {
+  background: black;
+  height: 100vh;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  padding-top: 100px;
+}
+
+#section4 {
+  background: white;
+  height: 100vh;
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  padding-top: 100px;
 }
 
 .maps {
@@ -311,13 +342,14 @@ section .section1 .infos p {
   transform: translateY(0);
 }
 
-body section .section1 .infos .arrow-link {
-  background: radial-gradient(circle, rgb(161, 161, 170) 6%, rgb(255, 255, 255) 95%);
+body section .section1 .arrow-link {
+  display: inline-block;
+  background: rgb(233, 233, 233);
   padding: 10px 20px;
   color: black;
   font-weight: bold;
+  border-radius: 300px;
   margin-top: 100px;
-  border-radius: 10px;
 }
 
 body {

@@ -1,20 +1,20 @@
-const image = document.querySelector('.logo');
-let isListening = true;
+// const image = document.querySelector('.logo');
+// let isListening = true;
 
-function crisLion() {
-  if (isListening) {
-    const audio = new Audio('layouts/lion.mp3');
-    audio.play();
-    console.log("rawr");
-    isListening = false;
+// function crisLion() {
+//   if (isListening) {
+//     const audio = new Audio('layouts/lion.mp3');
+//     audio.play();
+//     console.log("rawr");
+//     isListening = false;
 
-    setTimeout(() => {
-      isListening = true;
-    }, 6000);
-  }
-}
+//     setTimeout(() => {
+//       isListening = true;
+//     }, 6000);
+//   }
+// }
 
-image.addEventListener('mouseenter', crisLion);
+// image.addEventListener('mouseenter', crisLion);
 
 const endDate = new Date("Sep 4, 2023 00:00:00").getTime();
 
@@ -25,9 +25,9 @@ let timer = setInterval(function () {
 
 
   if (t >= 0) {
-    var days = Math.floor(t / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+    let days = Math.floor(t / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
 
     document.getElementById(
       "countdown"

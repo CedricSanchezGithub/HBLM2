@@ -1,11 +1,10 @@
-@use "settings" as var;
 
-// Section inscription
+// Section planning plan etc
 
-#section2{
-    background: white;
+#section3{
+    background: black;
     height: 100vh;
-    color: black;
+    color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: center;

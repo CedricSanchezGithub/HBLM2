@@ -57,3 +57,16 @@ a {
   font-weight: bold;
   text-transform: uppercase;
 }
+
+.scroll-snap {
+  height: 100%; /* Prend toute la hauteur du body */
+  width: 100%;
+  overflow-y: scroll; /* Permet le défilement vertical */
+  scroll-snap-type: y mandatory; /* Définir le type de défilement vertical */
+}
+
+.scroll-snap section {
+  height: 100%; /* Chaque section prend toute la hauteur du conteneur */
+  width: 100%;
+  scroll-snap-align: start;
+}
