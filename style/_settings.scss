@@ -19,13 +19,11 @@ $color5: rgb(14, 14, 14);
   margin: 0;
   box-sizing: border-box;
   list-style: none;
-  max-width: 2000px;
 }
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.836)),
-    url(../layouts/bg.jpg) center/cover;
+  background: url(../layouts/bg.jpg) center/cover;
   background-attachment: fixed;
-  color: whitesmoke;
+  overflow: hidden;
 }
 a {
   text-decoration: none;
@@ -59,14 +57,14 @@ a {
 }
 
 .scroll-snap {
-  height: 100%; /* Prend toute la hauteur du body */
+  height: 100vh; /* Prend toute la hauteur du body */
   width: 100%;
   overflow-y: scroll; /* Permet le défilement vertical */
   scroll-snap-type: y mandatory; /* Définir le type de défilement vertical */
 }
-
-.scroll-snap section {
-  height: 100%; /* Chaque section prend toute la hauteur du conteneur */
+.scroll {
+  height: 100vh; /* Chaque section prend toute la hauteur du conteneur */
   width: 100%;
   scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
