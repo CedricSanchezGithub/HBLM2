@@ -8,15 +8,34 @@
   .planning {
     display: flex;
     flex-direction: column;
-    .adressGymnase{
-height: 100%;
+    h2{
+      padding-top: 10px;
     }
-    .adressGymnase2{
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        font-size: 1.3rem;
-        justify-content: space-evenly
+    .adressGymnase {
+      height: 100%;
+    }
+    .adressGymnase2 {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      font-size: 1.3rem;
+      justify-content: space-evenly;
+      .adress {
+        background: var.$color2;
+        width: 50%;
+        margin: 0 auto;
+        border-radius: 10px;
+        padding: 10px;
+        transition: all 0.3s ease;
+        &:hover{
+          transform: scale(1.1);
+        }
+        i,
+        p,
+        h3 {
+          color: var.$color3;
+        }
+      }
     }
   }
 }
