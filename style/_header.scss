@@ -5,17 +5,6 @@ header {
   border-radius: 0 0 0 70px;
   height: 40vh;
   .countdownCountainerCountainer {
-    &::before {
-      content: "";
-      background-image: url(./layouts/logo-hblm.png);
-      background-size: cover;
-      position: absolute;
-      display: inline-block;
-      width: 200px;
-      height: 200px;
-      left: -350px;
-      top: -50px;
-    }
     position: relative;
     display: flex;
     color: var.$color3;
@@ -23,10 +12,20 @@ header {
     height: 100px;
     border-radius: 300px;
     font-size: 1.3rem;
-    border: solid var.$color1 5px;
+    border: solid var.$color1 2px;
     margin: 100px auto;
     background: var.$color2;
-    box-shadow: 0px 0px 10px 1px rgb(116, 116, 116);
+    &::before {
+      content: "";
+      background-image: url(./layouts/logo-hblm.png);
+      background-size: cover;
+      position: absolute;
+      display: inline-block;
+      width: 150px;
+      height: 150px;
+      left: -350px;
+      top: -50px;
+    }
 
     .secondes {
       text-align: center;
@@ -60,10 +59,9 @@ header {
     padding: 20px 20px 20px 20px;
     margin: 0 auto;
     background: var.$color2;
-    border: solid var.$color1 5px;
+    border: solid var.$color1 2px;
     border-top: none;
     border-radius: 0 0 300px 300px;
-    box-shadow:  3px 3px 11px 0px rgb(116, 116, 116);
   }
   .menu {
     position: relative;

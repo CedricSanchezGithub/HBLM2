@@ -2,16 +2,30 @@
 
 // Section planning plan etc
 #section3 {
-  background: rgb(11,7,7);
-background: linear-gradient(90deg, rgba(11,7,7,1) 14%, rgba(36,36,36,1) 85%);
+  background: rgb(11, 7, 7);
+  background: linear-gradient(
+    90deg,
+    rgba(11, 7, 7, 1) 14%,
+    rgba(36, 36, 36, 1) 85%
+  );
   color: var.$color2;
   @include var.section;
   padding: 100px;
+  box-shadow: 0px 0px 11px 4px rgb(116, 116, 116);
+
   .planning {
     display: flex;
     flex-direction: column;
-    h2{
-      padding-top: 10px;
+    border: 3px solid var.$color2;
+    border-radius: 30px;
+    box-shadow: 0px 0px 11px 4px rgb(59, 59, 59);
+
+    h2 {
+      border-bottom: solid 1px rgb(238, 238, 238);
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
     }
     .adressGymnase {
       height: 100%;
@@ -29,7 +43,7 @@ background: linear-gradient(90deg, rgba(11,7,7,1) 14%, rgba(36,36,36,1) 85%);
         border-radius: 10px;
         padding: 10px;
         transition: all 0.3s ease;
-        &:hover{
+        &:hover {
           transform: scale(1.1);
         }
         i,
