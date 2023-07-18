@@ -5,12 +5,17 @@ body {
     .section1 {
       .arrow-link {
         display: inline-block;
+        position: absolute;
         background: var.$color2;
         padding: 10px 20px;
-        color: black;
+        color: var.$color3;
         font-weight: bold;
+        font-size: 1.2rem;
         border-radius: 300px;
-        margin-top: 100px;
+        border: var.$border;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
   }

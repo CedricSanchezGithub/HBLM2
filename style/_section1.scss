@@ -4,8 +4,30 @@ section {
   .section1 {
     height: 60vh;
     display: grid;
-    grid-template-columns:33% 33% 33%;
+    grid-template-columns: 33% 33% 33%;
     font-family: var.$font1;
     text-align: center;
+    > * {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      color: var.$color3;
+      border: var.$border;
+      background: var.$color2;
+      margin: 30px;
+      border-radius: 50px;
+      border: solid var.$color1 5px;
+      .titre {
+        border-bottom: var.$border2;
+      }
+      h2 {
+        padding: 20px 0;
+        font-size: 2rem;
+      }
+      p {
+        width: 80%;
+        margin: 50px auto;
+      }
+    }
   }
 }

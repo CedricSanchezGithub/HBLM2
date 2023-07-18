@@ -1,11 +1,22 @@
+@use "settings" as var;
 
 // Section planning plan etc
-#section3{
-    background: black;
-    height: 100vh;
-    color: white;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-    padding-top: 100px;
+#section3 {
+  background: black;
+  color: white;
+  @include var.section;
+  .planning {
+    display: flex;
+    flex-direction: column;
+    .adressGymnase{
+height: 100%;
+    }
+    .adressGymnase2{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        font-size: 1.3rem;
+        justify-content: space-evenly
+    }
+  }
 }

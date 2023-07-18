@@ -1,9 +1,8 @@
+@use "settings" as var;
+
 #section4{
     background: white;
-    height: 100vh;
     color: black;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-    padding-top: 100px;
+    @include var.section;
+
 }

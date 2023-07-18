@@ -2,12 +2,14 @@
 
 // Section inscription
 
-#section2{
-    background: white;
-    height: 100vh;
-    color: black;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-    padding-top: 100px;
+#section2 {
+  background: white;
+  color: black;
+  @include var.section;
+  .inscription {
+    p {
+      width: 200px;
+      margin: 50px auto;
+    }
+  }
 }
