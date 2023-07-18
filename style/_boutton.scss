@@ -13,14 +13,22 @@ body {
         font-size: 1.2rem;
         border-radius: 300px;
         border: var.$border;
-        bottom: 20px;
+        bottom: 60px;
         left: 50%;
         transform: translateX(-50%);
         transition: all 0.3s ease;
-        &:hover{
+        box-shadow: 7px 4px 7px 3px rgba(0, 0, 0, 0.38);
+
+        &:hover {
           color: white;
           background: black;
           border: var.$border2;
+          transform: translateX(-50%) scale(1.1);
+        }
+        &::after {
+          font-family: "Font Awesome 5 Free";
+          content: "\f063";
+          display: inline-block;
         }
       }
     }

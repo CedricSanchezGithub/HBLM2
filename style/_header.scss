@@ -26,7 +26,7 @@ header {
     border: solid var.$color1 5px;
     margin: 100px auto;
     background: var.$color2;
-
+    box-shadow: 0px 0px 10px 1px rgb(131, 131, 131);
 
     .secondes {
       text-align: center;
@@ -47,6 +47,7 @@ header {
       justify-content: space-evenly;
       align-items: center;
       width: 100%;
+
       span {
         font-weight: bold;
       }
