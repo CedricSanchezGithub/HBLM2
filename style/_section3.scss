@@ -2,9 +2,11 @@
 
 // Section planning plan etc
 #section3 {
-  background: black;
-  color: white;
+  background: rgb(11,7,7);
+background: linear-gradient(90deg, rgba(11,7,7,1) 14%, rgba(36,36,36,1) 85%);
+  color: var.$color2;
   @include var.section;
+  padding: 100px;
   .planning {
     display: flex;
     flex-direction: column;
