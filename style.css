@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Quicksand";
-  src: url(../fonts/Quicksand-VariableFont_wght.ttf);
+  src: url(./Quicksand-VariableFont_wght.ttf);
 }
 @font-face {
   font-family: "Montserrat";
@@ -57,7 +57,7 @@ header .countdownCountainerCountainer {
 }
 header .countdownCountainerCountainer::before {
   content: "";
-  background-image: url(../layouts/logoclub/logo-hblm.png);
+  background-image: url(./logo-hblm.png);
   background-size: cover;
   position: absolute;
   display: inline-block;
