@@ -65,8 +65,8 @@ header .countdownCountainerCountainer::before {
   background-size: cover;
   position: absolute;
   display: inline-block;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   left: -350px;
   top: -50px;
 }
@@ -229,6 +229,15 @@ section .section1 > * p {
   border-radius: 30px;
   box-shadow: 0px 0px 11px 4px rgb(116, 116, 116);
   font-family: "Montserrat", sans-serif;
+}
+#section2 .inscription-left ul,
+#section2 .inscription-right ul {
+  margin: 0 60px;
+}
+#section2 .inscription-left li,
+#section2 .inscription-right li {
+  text-align: left;
+  list-style: inside;
 }
 #section2 .inscription-left p,
 #section2 .inscription-right p {

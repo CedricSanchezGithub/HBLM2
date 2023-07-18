@@ -21,8 +21,15 @@
     border-radius: 30px;
     box-shadow: 0px 0px 11px 4px rgb(116, 116, 116);
     font-family: var.$font2;
+    ul{
+      margin: 0 60px;
 
+    }
+    li{
+      text-align: left;
+      list-style: inside;
 
+    }
     p {
       width: 400px;
       margin: 50px auto;
