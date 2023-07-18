@@ -1,14 +1,22 @@
 @font-face {
   font-family: "Quicksand";
-  src: url(./Quicksand-VariableFont_wght.ttf);
+  src: url(./fonts/Quicksand-VariableFont_wght.ttf);
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+  src: url(./fonts/Montserrat-VariableFont_wght.ttf);
 }
+
+@font-face {
+  font-family: "Lobster-Regular";
+  src: url(./fonts/Lobster-Regular.ttf);
+}
+
+
 
 $font1: "Quicksand", sans-serif;
 $font2: "Montserrat", sans-serif;
+$font3: "Lobster-Regular", sans-serif;
 $color1: rgba(241, 230, 13);
 $color2: rgb(238, 238, 238);
 $color3: rgba(7, 7, 7);
@@ -55,7 +63,7 @@ a {
   padding-top: 30px;
   h2{
     text-transform: uppercase;
-    font-family: $font1;
+    font-family: $font2;
     font-size: 3rem;
   }
 }

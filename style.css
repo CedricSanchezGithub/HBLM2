@@ -1,11 +1,15 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Quicksand";
-  src: url(./Quicksand-VariableFont_wght.ttf);
+  src: url(./fonts/Quicksand-VariableFont_wght.ttf);
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+  src: url(./fonts/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Lobster-Regular";
+  src: url(./fonts/Lobster-Regular.ttf);
 }
 * {
   padding: 0;
@@ -57,7 +61,7 @@ header .countdownCountainerCountainer {
 }
 header .countdownCountainerCountainer::before {
   content: "";
-  background-image: url(./logo-hblm.png);
+  background-image: url(./layouts/logo-hblm.png);
   background-size: cover;
   position: absolute;
   display: inline-block;
@@ -205,7 +209,7 @@ section .section1 > * p {
 }
 #section2 h2 {
   text-transform: uppercase;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 3rem;
 }
 #section2 .inscription p {
@@ -224,7 +228,7 @@ section .section1 > * p {
 }
 #section3 h2 {
   text-transform: uppercase;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 3rem;
 }
 #section3 .planning {
@@ -253,7 +257,7 @@ section .section1 > * p {
 }
 #section4 h2 {
   text-transform: uppercase;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 3rem;
 }
 
