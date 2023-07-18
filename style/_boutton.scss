@@ -16,6 +16,12 @@ body {
         bottom: 20px;
         left: 50%;
         transform: translateX(-50%);
+        transition: all 0.3s ease;
+        &:hover{
+          color: white;
+          background: black;
+          border: var.$border2;
+        }
       }
     }
   }

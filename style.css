@@ -270,4 +270,10 @@ body section .section1 .arrow-link {
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
+  transition: all 0.3s ease;
+}
+body section .section1 .arrow-link:hover {
+  color: white;
+  background: black;
+  border: solid rgb(241, 230, 13) 4px;
 }/*# sourceMappingURL=style.css.map */
