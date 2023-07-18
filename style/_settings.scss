@@ -21,7 +21,7 @@ $color1: rgb(71, 71, 71);
 $color2: rgb(238, 238, 238);
 $color3: rgba(7, 7, 7);
 $color4: rgb(185, 185, 185);
-$border: solid black 3px;
+$border: solid rgba(7, 7, 7) 3px;
 $border2: solid rgba(241, 230, 13) 3px;
 
 * {
@@ -60,6 +60,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-align: center;
+  grid-gap: 50px;
   h2{
     text-transform: uppercase;
     font-family: $font2;
@@ -67,14 +68,14 @@ a {
   }
 }
 
-@mixin title {
-  font-family: $font1;
-  width: 100%;
-  font-size: 1.6rem;
-  user-select: none;
-  font-weight: bold;
-  text-transform: uppercase;
-}
+// @mixin title {
+//   font-family: $font1;
+//   width: 100%;
+//   font-size: 1.6rem;
+//   user-select: none;
+//   font-weight: bold;
+//   text-transform: uppercase;
+// }
 
 .scroll-snap {
   height: 100vh; /* Prend toute la hauteur du body */

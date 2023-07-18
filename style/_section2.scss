@@ -3,13 +3,26 @@
 // Section inscription
 
 #section2 {
-  background: white;
-  color: black;
+  background: rgb(235, 235, 235);
+  color: rgb(2, 2, 2);
   @include var.section;
-  .inscription {
+  padding: 100px;
+  .inscription-left, .inscription-right {
+    width: 100%;
+    margin: 0 auto;
+    background: var.$color3;
+    color: var.$color2;
+    border-radius: 30px;
+
+
     p {
-      width: 200px;
+      width: 400px;
       margin: 50px auto;
+      font-size: 1.3rem;
+      padding-top: 50px;
+    }
+    h2{
+      padding-top: 50px;
     }
   }
 }

@@ -58,7 +58,7 @@ header .countdownCountainerCountainer {
   border: solid rgb(71, 71, 71) 5px;
   margin: 100px auto;
   background: rgb(238, 238, 238);
-  box-shadow: 0px 0px 10px 1px rgb(131, 131, 131);
+  box-shadow: 0px 0px 10px 1px rgb(116, 116, 116);
 }
 header .countdownCountainerCountainer::before {
   content: "";
@@ -66,8 +66,8 @@ header .countdownCountainerCountainer::before {
   background-size: cover;
   position: absolute;
   display: inline-block;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   left: -350px;
   top: -50px;
 }
@@ -104,6 +104,7 @@ header .header {
   border: solid rgb(71, 71, 71) 5px;
   border-top: none;
   border-radius: 0 0 300px 300px;
+  box-shadow: 3px 3px 11px 0px rgb(116, 116, 116);
 }
 header .menu {
   position: relative;
@@ -181,11 +182,12 @@ section .section1 > * {
   flex-direction: column;
   position: relative;
   color: rgb(7, 7, 7);
-  border: solid black 3px;
+  border: solid rgb(7, 7, 7) 3px;
   background: rgb(238, 238, 238);
   margin: 30px;
   border-radius: 50px;
   border: solid rgb(71, 71, 71) 5px;
+  box-shadow: 0px 0px 11px 4px rgb(116, 116, 116);
 }
 section .section1 > * .titre {
   border-bottom: solid rgb(241, 230, 13) 3px;
@@ -200,21 +202,35 @@ section .section1 > * p {
 }
 
 #section2 {
-  background: white;
-  color: black;
+  background: rgb(235, 235, 235);
+  color: rgb(2, 2, 2);
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-align: center;
+  grid-gap: 50px;
+  padding: 100px;
 }
 #section2 h2 {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
 }
-#section2 .inscription p {
-  width: 200px;
+#section2 .inscription-left, #section2 .inscription-right {
+  width: 100%;
+  margin: 0 auto;
+  background: rgb(7, 7, 7);
+  color: rgb(238, 238, 238);
+  border-radius: 30px;
+}
+#section2 .inscription-left p, #section2 .inscription-right p {
+  width: 400px;
   margin: 50px auto;
+  font-size: 1.3rem;
+  padding-top: 50px;
+}
+#section2 .inscription-left h2, #section2 .inscription-right h2 {
+  padding-top: 50px;
 }
 
 #section3 {
@@ -224,6 +240,7 @@ section .section1 > * p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-align: center;
+  grid-gap: 50px;
 }
 #section3 h2 {
   text-transform: uppercase;
@@ -271,6 +288,7 @@ section .section1 > * p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-align: center;
+  grid-gap: 50px;
 }
 #section4 h2 {
   text-transform: uppercase;
@@ -278,7 +296,7 @@ section .section1 > * p {
   font-size: 3rem;
 }
 
-body section .section1 .arrow-link {
+body .arrow-link {
   display: inline-block;
   position: absolute;
   background: rgb(238, 238, 238);
@@ -287,20 +305,20 @@ body section .section1 .arrow-link {
   font-weight: bold;
   font-size: 1.2rem;
   border-radius: 300px;
-  border: solid black 3px;
+  border: solid rgb(7, 7, 7) 3px;
   bottom: 60px;
   left: 50%;
   transform: translateX(-50%);
   transition: all 0.3s ease;
   box-shadow: 7px 4px 7px 3px rgba(0, 0, 0, 0.38);
 }
-body section .section1 .arrow-link:hover {
+body .arrow-link:hover {
   color: white;
   background: black;
   border: solid rgb(241, 230, 13) 3px;
   transform: translateX(-50%) scale(1.1);
 }
-body section .section1 .arrow-link::after {
+body .arrow-link::after {
   font-family: "Font Awesome 5 Free";
   content: "\f063";
   display: inline-block;
