@@ -43,3 +43,22 @@ let timer = setInterval(function () {
     clearInterval(timer);
   }
 }, 1000);
+
+addEventListener("scroll", () => {
+  const menu = document.querySelector(".header");
+  const scrollY = window.scrollY;
+  console.log(scrollY);
+  if (scrollY > 100) {
+    menu.classList.add("menuSlide");
+    console.log(menu);
+  } 
+});
+addEventListener("scroll", () => {
+  const menu = document.querySelector(".header");
+  const scrollY = window.scrollY;
+  console.log(scrollY);
+  if (scrollY === 0) {
+    menu.classList.remove("menuSlide");
+    console.log(menu);
+  } 
+});
