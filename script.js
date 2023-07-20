@@ -49,16 +49,14 @@ addEventListener("scroll", () => {
   const scrollY = window.scrollY;
   console.log(scrollY);
   if (scrollY > 100) {
-    menu.classList.add("menuSlide");
-    console.log(menu);
-  } 
+    menu.style.height = "20px";
+  }
 });
 addEventListener("scroll", () => {
   const menu = document.querySelector(".header");
   const scrollY = window.scrollY;
   console.log(scrollY);
   if (scrollY === 0) {
-    menu.classList.remove("menuSlide");
-    console.log(menu);
-  } 
+    menu.style.height = "";
+  }
 });

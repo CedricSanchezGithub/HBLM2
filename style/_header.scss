@@ -1,9 +1,92 @@
 @use "./settings" as var;
 
 header {
-  border-radius: 0 0 0 70px;
-  height: 40vh;
+  height: 100vh;
+
+  
+  .header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    width: 70%;
+    padding: 20px 20px 20px 20px;
+    margin: 0 auto;
+    background: var.$color2;
+    border-top: none;
+    border-radius: 0 0 300px 300px;
+    z-index: 10;
+    box-shadow: 5px 5px 15px 5px #000000;    
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    // opacity: 0.6;
+
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      color: rgb(10, 10, 10);
+      ul {
+        font-family: var.$font1;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        width: 100%;
+        font-size: 1.6rem;
+        user-select: none;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        li:nth-child(2) {
+          position: relative;
+        }
+        li:not(:first-child) {
+          transition: transform 0.2s;
+          display: inline-block;
+          a {
+            position: relative;
+            color: rgb(10, 10, 10);
+            width: 100%;
+            &::after {
+              top: -5px;
+              position: absolute;
+              content: "";
+              width: 100%;
+              height: 5px;
+              background: var.$color1;
+              transition: all 0.2s ease;
+              left: -100px;
+              opacity: 0;
+              border-radius: 20px;
+            }
+            &:hover::after {
+              left: 0;
+              opacity: 1;
+            }
+          }
+        }
+      }
+      span {
+        position: relative;
+
+        &::after {
+          left: 0;
+          top: -5px;
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 5px;
+          background: var.$color5;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
   .countdownCountainerCountainer {
+    box-shadow: 5px 5px 15px 5px #000000;    
+
     position: relative;
     display: flex;
     color: var.$color3;
@@ -11,21 +94,8 @@ header {
     height: 100px;
     border-radius: 300px;
     font-size: 1.3rem;
-    border: solid var.$color1 2px;
     margin: 100px auto;
     background: var.$color2;
-    &::before {
-      content: "";
-      background-image: url(./layouts/logo-hblm.png);
-      background-size: cover;
-      position: absolute;
-      display: inline-block;
-      width: 200px;
-      height: 200px;
-      left: -350px;
-      top: -50px;
-    }
-
     .secondes {
       text-align: center;
     }
@@ -46,90 +116,53 @@ header {
       align-items: center;
       width: 100%;
 
+
       span {
         font-weight: bold;
       }
     }
   }
-}
-.header {
-  position: sticky;
-  top: 0;
-  display: flex;
-  width: 70%;
-  padding: 20px 20px 20px 20px;
-  margin: 0 auto;
-  background: var.$color2;
-  border: solid var.$color1 2px;
-  border-top: none;
-  border-radius: 0 0 300px 300px;
-  z-index: 10;
-  transition: all 0.4s ease;
-
-  .menu {
-    display: flex;
-    justify-content: center;
+  .heroPage {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 5px 5px 15px 5px #000000;    
+    margin: 0 auto;
+    padding: 020px;
+    width: 70%;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    color: rgb(10, 10, 10);
-    ul {
+    .section1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      font-size: 1.3rem;
+      width: 80%;
+      > * {
+        margin: 20px;
+        line-height: 25px;
+      }
+    }
+    h1 {
       font-family: var.$font1;
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      width: 100%;
-      font-size: 1.6rem;
-      user-select: none;
-      font-weight: bold;
-      text-transform: uppercase;
+      font-size: 5.5rem;
+      color: var.$color3;
+      letter-spacing: 0.5rem;
+      font-weight: 800;
+      margin: 20px;
+      line-height: 100px;
+      text-shadow: 6px 5px 12px #959593;
+      &:hover span{
+        text-shadow: 6px 5px 12px #e6e629;
+      }
+      span {
+        transition: text-shadow 0.4s ease-in-out;
 
-      li:nth-child(2) {
-        position: relative;
       }
-      li:not(:first-child) {
-        transition: transform 0.2s;
-        display: inline-block;
-        a {
-          position: relative;
-          color: rgb(10, 10, 10);
-          width: 100%;
-          &::after {
-            top: -5px;
-            position: absolute;
-            content: "";
-            width: 100%;
-            height: 5px;
-            background: var.$color1;
-            transition: all 0.2s ease;
-            left: -100px;
-            opacity: 0;
-            border-radius: 20px;
-          }
-          &:hover::after {
-            left: 0;
-            opacity: 1;
-          }
-        }
-      }
-    }
-    span {
-      position: relative;
 
-      &::after {
-        left: 0;
-        top: -5px;
-        position: absolute;
-        content: "";
-        width: 100%;
-        height: 5px;
-        background: var.$color1;
-        border-radius: 20px;
-      }
-    }
   }
 }
-
 .menuSlide {
   height: 20px;
+}
 }

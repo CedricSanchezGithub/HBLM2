@@ -1,15 +1,11 @@
 @charset "UTF-8";
 @font-face {
-  font-family: "Quicksand";
-  src: url(./fonts/Quicksand-VariableFont_wght.ttf);
+  font-family: "Oswald";
+  src: url(./fonts/Oswald/Oswald-VariableFont_wght.ttf);
 }
 @font-face {
-  font-family: "Montserrat";
-  src: url(./fonts/Montserrat-VariableFont_wght.ttf);
-}
-@font-face {
-  font-family: "Lobster-Regular";
-  src: url(./fonts/Lobster-Regular.ttf);
+  font-family: "SourceSans3";
+  src: url(./fonts/SourceSansPro/SourceSans3-VariableFont_wght.ttf);
 }
 * {
   padding: 0;
@@ -19,8 +15,8 @@
 }
 
 body {
-  background: rgb(36, 36, 36);
-  background: radial-gradient(circle, rgb(36, 36, 36) 18%, rgb(11, 7, 7) 80%);
+  background: url(./hblm.png) center/cover fixed;
+  font-family: "Oswald", sans-serif;
 }
 
 a {
@@ -43,10 +39,87 @@ a {
 }
 
 header {
-  border-radius: 0 0 0 70px;
-  height: 40vh;
+  height: 100vh;
+}
+header .header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  width: 70%;
+  padding: 20px 20px 20px 20px;
+  margin: 0 auto;
+  background: rgb(238, 238, 238);
+  border-top: none;
+  border-radius: 0 0 300px 300px;
+  z-index: 10;
+  box-shadow: 5px 5px 15px 5px #000000;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+header .header .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: rgb(10, 10, 10);
+}
+header .header .menu ul {
+  font-family: "SourceSans3", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  font-size: 1.6rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+header .header .menu ul li:nth-child(2) {
+  position: relative;
+}
+header .header .menu ul li:not(:first-child) {
+  transition: transform 0.2s;
+  display: inline-block;
+}
+header .header .menu ul li:not(:first-child) a {
+  position: relative;
+  color: rgb(10, 10, 10);
+  width: 100%;
+}
+header .header .menu ul li:not(:first-child) a::after {
+  top: -5px;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: rgb(71, 71, 71);
+  transition: all 0.2s ease;
+  left: -100px;
+  opacity: 0;
+  border-radius: 20px;
+}
+header .header .menu ul li:not(:first-child) a:hover::after {
+  left: 0;
+  opacity: 1;
+}
+header .header .menu span {
+  position: relative;
+}
+header .header .menu span::after {
+  left: 0;
+  top: -5px;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: #F0E50D;
+  border-radius: 20px;
 }
 header .countdownCountainerCountainer {
+  box-shadow: 5px 5px 15px 5px #000000;
   position: relative;
   display: flex;
   color: rgb(7, 7, 7);
@@ -54,20 +127,8 @@ header .countdownCountainerCountainer {
   height: 100px;
   border-radius: 300px;
   font-size: 1.3rem;
-  border: solid rgb(71, 71, 71) 2px;
   margin: 100px auto;
   background: rgb(238, 238, 238);
-}
-header .countdownCountainerCountainer::before {
-  content: "";
-  background-image: url(./layouts/logo-hblm.png);
-  background-size: cover;
-  position: absolute;
-  display: inline-block;
-  width: 200px;
-  height: 200px;
-  left: -350px;
-  top: -50px;
 }
 header .countdownCountainerCountainer .secondes {
   text-align: center;
@@ -92,123 +153,49 @@ header .countdownCountainerCountainer .countdownCountainer {
 header .countdownCountainerCountainer .countdownCountainer span {
   font-weight: bold;
 }
-
-.header {
-  position: sticky;
-  top: 0;
-  display: flex;
-  width: 70%;
-  padding: 20px 20px 20px 20px;
-  margin: 0 auto;
-  background: rgb(238, 238, 238);
-  border: solid rgb(71, 71, 71) 2px;
-  border-top: none;
-  border-radius: 0 0 300px 300px;
-  z-index: 10;
-  transition: all 0.4s ease;
-}
-.header .menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  color: rgb(10, 10, 10);
-}
-.header .menu ul {
-  font-family: "Quicksand", sans-serif;
+header .heroPage {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  width: 100%;
-  font-size: 1.6rem;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  font-weight: bold;
-  text-transform: uppercase;
+  grid-template-columns: 70% 30%;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 5px 5px 15px 5px #000000;
+  margin: 0 auto;
+  padding: 20px;
+  width: 70%;
+  align-items: center;
 }
-.header .menu ul li:nth-child(2) {
-  position: relative;
+header .heroPage .section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 1.3rem;
+  width: 80%;
 }
-.header .menu ul li:not(:first-child) {
-  transition: transform 0.2s;
-  display: inline-block;
+header .heroPage .section1 > * {
+  margin: 20px;
+  line-height: 25px;
 }
-.header .menu ul li:not(:first-child) a {
-  position: relative;
-  color: rgb(10, 10, 10);
-  width: 100%;
+header .heroPage h1 {
+  font-family: "SourceSans3", sans-serif;
+  font-size: 5.5rem;
+  color: rgb(7, 7, 7);
+  letter-spacing: 0.5rem;
+  font-weight: 800;
+  margin: 20px;
+  line-height: 100px;
+  text-shadow: 6px 5px 12px #959593;
 }
-.header .menu ul li:not(:first-child) a::after {
-  top: -5px;
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 5px;
-  background: rgb(71, 71, 71);
-  transition: all 0.2s ease;
-  left: -100px;
-  opacity: 0;
-  border-radius: 20px;
+header .heroPage h1:hover span {
+  text-shadow: 6px 5px 12px #e6e629;
 }
-.header .menu ul li:not(:first-child) a:hover::after {
-  left: 0;
-  opacity: 1;
+header .heroPage h1 span {
+  transition: text-shadow 0.4s ease-in-out;
 }
-.header .menu span {
-  position: relative;
-}
-.header .menu span::after {
-  left: 0;
-  top: -5px;
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 5px;
-  background: rgb(71, 71, 71);
-  border-radius: 20px;
-}
-
-.menuSlide {
+header .menuSlide {
   height: 20px;
 }
 
-section .section1 {
-  height: 60vh;
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  font-family: "Quicksand", sans-serif;
-  text-align: center;
-}
-section .section1 > * {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  color: rgb(7, 7, 7);
-  border: solid rgb(7, 7, 7) 2px;
-  background: rgb(238, 238, 238);
-  margin: 30px;
-  border-radius: 50px;
-  border: solid rgb(71, 71, 71) 2px;
-  height: 80%;
-}
-section .section1 > * .titre {
-  border-bottom: solid 2px rgb(71, 71, 71);
-}
-section .section1 > * h2 {
-  padding: 20px 0;
-  font-size: 2rem;
-}
-section .section1 > * p {
-  width: 80%;
-  margin: 50px auto;
-  font-size: 1.3rem;
-  line-height: 30px;
-}
-
 #section2 {
-  background: rgb(235, 235, 235);
   color: rgb(2, 2, 2);
   height: 100vh;
   display: grid;
@@ -216,50 +203,39 @@ section .section1 > * p {
   text-align: center;
   grid-gap: 50px;
   padding: 100px;
-  box-shadow: 0px 0px 11px 4px rgb(116, 116, 116);
 }
 #section2 h2 {
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 3rem;
 }
-#section2 .inscription-left,
+#section2 .inscription-left {
+  color: rgb(238, 238, 238);
+  font-size: 1.3rem;
+  border-radius: 30px;
+  background: linear-gradient(90deg, rgb(36, 36, 36) 16%, rgb(11, 7, 7) 89%);
+  padding: 20px;
+}
+#section2 .inscription-left ul {
+  list-style: disc;
+}
 #section2 .inscription-right {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 15% 25% 60%;
+  align-items: center;
+  justify-items: center;
   width: 100%;
   margin: 0 auto;
-  background: rgb(36, 36, 36);
   background: linear-gradient(90deg, rgb(36, 36, 36) 16%, rgb(11, 7, 7) 89%);
   color: rgb(238, 238, 238);
   border-radius: 30px;
   box-shadow: 0px 0px 11px 4px rgb(116, 116, 116);
-  font-family: "Montserrat", sans-serif;
-}
-#section2 .inscription-left ul,
-#section2 .inscription-right ul {
-  margin: 0 60px;
-}
-#section2 .inscription-left li,
-#section2 .inscription-right li {
-  text-align: left;
-  list-style: inside;
-}
-#section2 .inscription-left p,
-#section2 .inscription-right p {
-  width: 400px;
-  margin: 50px auto;
   font-size: 1.3rem;
-  padding-top: 50px;
+  padding: 20px 50px;
+  line-height: 50px;
 }
-#section2 .inscription-left h2,
-#section2 .inscription-right h2 {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: space-around;
-  border-bottom: solid 1px rgb(238, 238, 238);
-  height: 100px;
+#section2 .inscription-right ul {
+  list-style: decimal !important;
 }
 
 #section3 {
@@ -280,28 +256,32 @@ section .section1 > * p {
 
 body .arrow-link {
   display: inline-block;
-  position: absolute;
   background: rgb(238, 238, 238);
-  padding: 10px 20px;
+  padding: 5px 10px;
   color: rgb(7, 7, 7);
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1rem;
   border-radius: 300px;
   border: solid rgb(7, 7, 7) 2px;
-  bottom: 60px;
-  left: 50%;
-  transform: translateX(-50%);
   transition: all 0.3s ease;
   box-shadow: 7px 4px 7px 3px rgba(0, 0, 0, 0.38);
+  margin-top: 10px;
 }
 body .arrow-link:hover {
   color: white;
   background: black;
   border: solid rgb(241, 230, 13) 2px;
-  transform: translateX(-50%) scale(1.1);
+  transform: scale(1.1);
+  box-shadow: 7px 4px 7px 3px #c5c525;
 }
 body .arrow-link::after {
   font-family: "Font Awesome 5 Free";
   content: "\f063";
   display: inline-block;
+}
+body .passportButton {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

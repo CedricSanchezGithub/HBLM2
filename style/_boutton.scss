@@ -3,30 +3,34 @@
 body {
   .arrow-link {
     display: inline-block;
-    position: absolute;
     background: var.$color2;
-    padding: 10px 20px;
+    padding: 5px 10px;
     color: var.$color3;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border-radius: 300px;
     border: var.$border;
-    bottom: 60px;
-    left: 50%;
-    transform: translateX(-50%);
     transition: all 0.3s ease;
     box-shadow: 7px 4px 7px 3px rgba(0, 0, 0, 0.38);
+    margin-top: 10px;
 
     &:hover {
       color: white;
       background: black;
       border: var.$border2;
-      transform: translateX(-50%) scale(1.1);
+      transform: scale(1.1);
+      box-shadow:  7px 4px 7px 3px #c5c525;
     }
     &::after {
       font-family: "Font Awesome 5 Free";
       content: "\f063";
       display: inline-block;
     }
+  }
+  .passportButton{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    align-items: center;
   }
 }

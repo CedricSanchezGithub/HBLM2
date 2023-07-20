@@ -1,36 +1,34 @@
-Montserrat Variable Font
-========================
+Source Sans 3 Variable Font
+===========================
 
-This download contains Montserrat as both variable fonts and static fonts.
+This download contains Source Sans 3 as both variable fonts and static fonts.
 
-Montserrat is a variable font with this axis:
+Source Sans 3 is a variable font with this axis:
   wght
 
 This means all the styles are contained in these files:
-  Montserrat-VariableFont_wght.ttf
-  Montserrat-Italic-VariableFont_wght.ttf
+  SourceSans3-VariableFont_wght.ttf
+  SourceSans3-Italic-VariableFont_wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
-in those cases you can use the static font files for Montserrat:
-  static/Montserrat-Thin.ttf
-  static/Montserrat-ExtraLight.ttf
-  static/Montserrat-Light.ttf
-  static/Montserrat-Regular.ttf
-  static/Montserrat-Medium.ttf
-  static/Montserrat-SemiBold.ttf
-  static/Montserrat-Bold.ttf
-  static/Montserrat-ExtraBold.ttf
-  static/Montserrat-Black.ttf
-  static/Montserrat-ThinItalic.ttf
-  static/Montserrat-ExtraLightItalic.ttf
-  static/Montserrat-LightItalic.ttf
-  static/Montserrat-Italic.ttf
-  static/Montserrat-MediumItalic.ttf
-  static/Montserrat-SemiBoldItalic.ttf
-  static/Montserrat-BoldItalic.ttf
-  static/Montserrat-ExtraBoldItalic.ttf
-  static/Montserrat-BlackItalic.ttf
+in those cases you can use the static font files for Source Sans 3:
+  static/SourceSans3-ExtraLight.ttf
+  static/SourceSans3-Light.ttf
+  static/SourceSans3-Regular.ttf
+  static/SourceSans3-Medium.ttf
+  static/SourceSans3-SemiBold.ttf
+  static/SourceSans3-Bold.ttf
+  static/SourceSans3-ExtraBold.ttf
+  static/SourceSans3-Black.ttf
+  static/SourceSans3-ExtraLightItalic.ttf
+  static/SourceSans3-LightItalic.ttf
+  static/SourceSans3-Italic.ttf
+  static/SourceSans3-MediumItalic.ttf
+  static/SourceSans3-SemiBoldItalic.ttf
+  static/SourceSans3-BoldItalic.ttf
+  static/SourceSans3-ExtraBoldItalic.ttf
+  static/SourceSans3-BlackItalic.ttf
 
 Get started
 -----------
