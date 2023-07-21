@@ -129,6 +129,11 @@ header .countdownCountainerCountainer {
     height: 50px;
   }
 }
+@media screen and (max-width: 750px) {
+  header .countdownCountainerCountainer {
+    display: none;
+  }
+}
 header .countdownCountainerCountainer .secondes {
   text-align: center;
 }
@@ -168,6 +173,14 @@ header .heroPage {
     height: 80%;
     justify-content: space-around;
     margin: 50px auto;
+  }
+}
+@media screen and (max-width: 750px) {
+  header .heroPage {
+    width: 100%;
+    border-radius: 0;
+    height: 100vh;
+    margin: 0;
   }
 }
 header .heroPage .section1 {

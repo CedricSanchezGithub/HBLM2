@@ -88,6 +88,9 @@ header {
       margin: 0;
       height: 50px;
     }
+    @media screen and (max-width: 750px) {
+      display: none;
+    }
     .secondes {
       text-align: center;
     }
@@ -128,6 +131,12 @@ header {
       height: 80%;
       justify-content: space-around;
       margin: 50px auto;
+    }
+    @media screen and (max-width: 750px) {
+      width: 100%;
+      border-radius: 0;
+      height: 100vh;
+      margin: 0;
     }
     .section1 {
       display: flex;
