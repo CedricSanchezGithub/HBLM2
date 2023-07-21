@@ -267,7 +267,7 @@ header .heroPage h1 span {
 header .heroPage .section1Responsive {
   display: none;
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 730px) {
   header .heroPage .section1Responsive {
     font-family: "Oswald", sans-serif;
     display: flex;
@@ -315,51 +315,129 @@ header .heroPage .menuSlide {
   font-family: "Oswald", sans-serif;
   font-size: 3rem;
 }
-#section2 .inscription-left {
-  color: rgb(238, 238, 238);
-  font-size: 1.3rem;
-  border-radius: 30px;
-  background: linear-gradient(90deg, rgb(36, 36, 36) 16%, rgb(11, 7, 7) 89%);
-  padding: 20px;
+@media screen and (max-width: 1120px) {
+  #section2 {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
 }
-#section2 .inscription-left ul {
-  list-style: disc;
+@media screen and (max-width: 770px) {
+  #section2 {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    font-size: 1.2rem;
+  }
 }
+#section2 .inscription-left,
 #section2 .inscription-right {
   display: grid;
-  grid-template-rows: 15% 25% 60%;
+  grid-template-rows: 15% 35% 50%;
+  color: rgb(238, 238, 238);
+  font-size: 1.5rem;
   align-items: center;
   justify-items: center;
-  width: 100%;
-  margin: 0 auto;
   background: linear-gradient(90deg, rgb(36, 36, 36) 16%, rgb(11, 7, 7) 89%);
-  color: rgb(238, 238, 238);
-  border-radius: 30px;
-  box-shadow: 0px 0px 11px 4px rgb(116, 116, 116);
-  font-size: 1.3rem;
-  padding: 20px 50px;
-  line-height: 50px;
 }
-#section2 .inscription-right ul {
-  list-style: decimal !important;
+@media screen and (max-width: 1120px) {
+  #section2 .inscription-left,
+  #section2 .inscription-right {
+    height: 100vh;
+  }
+}
+#section2 .inscription-left h2,
+#section2 .inscription-right h2 {
+  background: #F0E50D;
+  height: 100%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+}
+#section2 .inscription-left .documents,
+#section2 .inscription-right .documents {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+}
+#section2 .inscription-left .documents .formulaire,
+#section2 .inscription-right .documents .formulaire {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 300px;
+}
+#section2 .inscription-left .documents .formulaire::after,
+#section2 .inscription-right .documents .formulaire::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f061";
+  display: inline-block;
+}
+#section2 .inscription-left .documents .formulaire a,
+#section2 .inscription-right .documents .formulaire a {
+  width: 100%;
+  color: rgb(7, 7, 7);
+  height: 100%;
+}
+#section2 .inscription-left .documents .formulaire a:hover,
+#section2 .inscription-right .documents .formulaire a:hover {
+  color: white;
+  background: rgba(0, 0, 0, 0.952);
+}
+@media screen and (max-width: 1120px) {
+  #section2 .inscription-right p {
+    padding: 50px;
+  }
 }
 
 #section3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: black;
 }
 #section3 img {
   height: 100vh;
+  margin: 20px 0;
+  border: solid 2px black;
+}
+@media screen and (max-width: 970px) {
+  #section3 img {
+    width: 100%;
+  }
 }
 
 #section4 {
-  display: flex;
-  flex-direction: column;
-  background: rgb(255, 255, 255);
+  margin: 0 auto;
 }
-
+#section4 th {
+  font-size: 2rem;
+  color: black;
+  background: #F0E50D;
+}
+#section4 table {
+  background: rgb(7, 7, 7);
+  width: 929px;
+  height: 100vh;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1000px) {
+  #section4 table {
+    width: 100%;
+  }
+}
+#section4 table img {
+  width: 100px;
+}
+#section4 table td {
+  background: white;
+  text-align: center;
+  font-size: 2rem;
+  height: 14.28%;
+  width: 40%;
+}
 body .arrow-link {
   display: inline-block;
   background: rgb(238, 238, 238);
@@ -388,6 +466,13 @@ body .arrow-link::after {
 body .passportButton {
   display: flex;
   justify-content: space-around;
-  width: 30%;
+  width: 300px;
   align-items: center;
+  height: 50px;
+  font-size: larger;
+}
+body .passportButton::after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f061";
+  display: inline-block;
 }/*# sourceMappingURL=style.css.map */
