@@ -6,108 +6,50 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  img {
+  th {
+    font-size: 2rem;
+    color: white;
+    background: black;
+    border-radius: 20px;
+    box-shadow: 5px 3px 9px 1px black;
+    border-radius: 10px;
+
+
+  }
+  table {
+    width: 929px;
     height: 100vh;
-    margin: 20px 0;
-    border: solid 2px black;
-    @media screen and (max-width: 970px) {
+    margin: 0 auto;
+    border-spacing: 10px;
+    @media screen and (max-width: 1000px) {
       width: 100%;
     }
+    td {
+      font-weight: bold;
+      background: rgb(255, 242, 92);
+      background: linear-gradient(
+        90deg,
+        rgba(255, 242, 92, 1) 49%,
+        rgba(255, 245, 124, 1) 87%
+      );
+      box-shadow: 5px 3px 9px 1px black;
+      text-shadow: 10px 7px 8px #dfd451;
+      text-align: center;
+      font-size: 2rem;
+      height: 14.28%;
+      border-radius: 10px;
+      line-height: 35px;
+
+      @media screen and (max-width: 1120px) {
+      }
+    }
+    td:empty {
+      background: none;
+      box-shadow: none;
+
+    }
+  }
+  th:nth-child(1) {
+    height: 20px;
   }
 }
-//   background: linear-gradient(
-//     90deg,
-//     rgba(11, 7, 7, 1) 14%,
-//     rgba(36, 36, 36, 1) 85%
-//   );
-//   color: var.$color2;
-//   height: 100vh;
-//   display: grid;
-//   grid-template-rows: 8% 80% 12%;
-//   h1 {
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-around;
-//     font-size: 3rem;
-//     background: #f1e70f;
-//     color: black;
-//     border-top: solid black 1px;
-//     font-family: var.$font3;
-//     letter-spacing: 9px;
-
-//   }
-//   .planingLeft {
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//     background: #f1e70f;
-
-//     .adressGymnase {
-//       display: flex;
-//       height: 100%;
-//       width: 80%;
-//       margin: 0 auto;
-//     }
-//     .adressGymnase2 {
-//       display: flex;
-//       flex-direction: row;
-//       align-items: center;
-//       justify-content: space-evenly;
-//       width: 100%;
-//       text-align: center;
-//       .adress {
-//         // background: var.$color2;
-//         border-radius: 10px;
-//         padding: 10px;
-//         transition: all 0.3s ease;
-//         width: 100%;
-//         font-weight: bold;
-//         font-size: 1.2rem;
-//         // border: var.$border;
-//         &:hover {
-//           transform: scale(1.1);
-//         }
-//         i,
-//         p,
-//         h3 {
-//           color: var.$color3;
-//         }
-//       }
-//     }
-//   }
-//   .planingRight {
-//     display: flex;
-//     align-items: center;
-//     padding-right: 30px;
-//     width: 100%;
-//     padding-left: 20px;
-
-//     h1 {
-//       text-align: center;
-//       margin-bottom: 20px;
-//       width: 100%;
-
-//     }
-
-//     table {
-//       border-collapse: separate;
-//       border-spacing: 10px;
-//       width: 100%;
-//       border-radius: 20px;
-//     }
-//     td,
-//     th {
-//       padding: 10px;
-//       background-color: var.$color4;
-//       color: black;
-//       border: 1px solid black;
-//       border-radius: 10px;
-//       text-align: center;
-//       font-weight: bold;
-//       font-family: var.$font2;
-//       &:empty {
-//         visibility: hidden;
-//       }
-//     }
-//   }
-// }

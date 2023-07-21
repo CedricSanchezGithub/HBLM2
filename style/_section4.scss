@@ -1,32 +1,46 @@
 @use "settings" as var;
 
-#section4{
+#section4 {
+  margin: 0 auto;
+  th {
+    font-size: 2rem;
+    color: white;
+    background: black;
+    border-radius: 20px;
+  }
+  table {
+    width: 929px;
+    height: 100vh;
     margin: 0 auto;
-    th{
-        font-size: 2rem;
-        color: black;
-        background: var.$color5;
+    border-spacing: 10px;
+    @media screen and (max-width: 1000px) {
+      width: 100%;
     }
-    table {
-        background: var.$color3;
-        width: 929px;
-        height: 100vh;
-        margin: 0 auto;
-        @media screen and (max-width: 1000px) {
-            width: 100%;
-        }
-        img{
-            width: 100px;
-        }
-        td{
-            background: white;
-            text-align: center;
-            font-size: 2rem;
-            height: 14.28%;
-            width: 40%;
-            @media screen and (max-width: 1120px) {
+    img {
+      width: 100px;
+    }
+    td {
+        font-weight: bold;
+      background: rgb(255, 242, 92);
+      background: linear-gradient(
+        90deg,
+        rgba(255, 242, 92, 1) 49%,
+        rgba(255, 245, 124, 1) 87%
+      );
+      box-shadow: 5px 3px 9px 1px black;
+      text-shadow: 10px 7px 8px #dfd451;
+      text-align: center;
+      font-size: 2rem;
+      height: 14.28%;
+      line-height: 5px;
+      border-radius: 20px;
 
-            }
-        }
+      @media screen and (max-width: 1120px) {
       }
+    }
+    td:nth-child(2),
+    td:nth-child(3) {
+      width: 25%;
+    }
+  }
 }

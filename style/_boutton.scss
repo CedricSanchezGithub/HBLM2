@@ -3,8 +3,8 @@
 body {
   .arrow-link {
     display: inline-block;
-    background: var.$color2;
-    padding: 5px 10px;
+    background: rgb(238, 238, 238);
+    padding: 3px 10px;
     color: var.$color3;
     font-weight: bold;
     font-size: 1rem;
@@ -13,6 +13,7 @@ body {
     transition: all 0.3s ease;
     box-shadow: 7px 4px 7px 3px rgba(0, 0, 0, 0.38);
     margin-top: 10px;
+    text-shadow: none;
 
     &:hover {
       color: white;
