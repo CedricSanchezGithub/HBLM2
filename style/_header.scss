@@ -193,9 +193,11 @@ header {
       @media screen and (max-width: 1400px) {
         text-align: center;
         font-size: 4rem;
+        
         @media screen and (max-width: 730px) {
           font-size: 3rem;
           margin: 0;
+          line-height: normal;
         }
       }
       &:hover span {
