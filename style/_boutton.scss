@@ -35,6 +35,8 @@ body {
     align-items: center;
     height: 50px;
     font-size: larger;
+    margin: 0;
+
     &::after {
         font-family: "Font Awesome 5 Free";
         content: "\f061";

@@ -337,6 +337,7 @@ header .heroPage .menuSlide {
   flex-direction: column;
   align-items: center;
   justify-items: center;
+  justify-content: space-between;
   color: rgb(238, 238, 238);
   font-size: 1.5rem;
   background: linear-gradient(90deg, rgb(36, 36, 36) 16%, rgb(11, 7, 7) 89%);
@@ -350,7 +351,7 @@ header .heroPage .menuSlide {
 #section2 .inscription-left h2,
 #section2 .inscription-right h2 {
   background: #F0E50D;
-  height: 100%;
+  height: 100px;
   color: black;
   display: flex;
   flex-direction: column;
@@ -388,6 +389,14 @@ header .heroPage .menuSlide {
   color: white;
   background: rgba(0, 0, 0, 0.952);
 }
+#section2 .buttonInscription {
+  display: flex;
+  height: 100px;
+  align-items: center;
+}
+#section2 .h2Countainer {
+  width: 100%;
+}
 @media screen and (max-width: 1120px) {
   #section2 .inscription-right p {
     padding: 50px;
@@ -406,6 +415,11 @@ header .heroPage .menuSlide {
   border-radius: 20px;
   box-shadow: 5px 3px 9px 1px black;
   border-radius: 10px;
+}
+@media screen and (max-width: 1000px) {
+  #section3 th {
+    font-size: 1.2rem;
+  }
 }
 #section3 table {
   width: 929px;
@@ -429,6 +443,11 @@ header .heroPage .menuSlide {
   height: 14.28%;
   border-radius: 10px;
   line-height: 35px;
+}
+@media screen and (max-width: 1000px) {
+  #section3 table td {
+    font-size: 1.2rem;
+  }
 }
 #section3 table td:empty {
   background: none;
@@ -470,8 +489,12 @@ header .heroPage .menuSlide {
   text-align: center;
   font-size: 2rem;
   height: 14.28%;
-  line-height: 5px;
   border-radius: 20px;
+}
+@media screen and (max-width: 1000px) {
+  #section4 table td {
+    font-size: 1.2rem;
+  }
 }
 #section4 table td:nth-child(2),
 #section4 table td:nth-child(3) {
@@ -511,6 +534,7 @@ body .passportButton {
   align-items: center;
   height: 50px;
   font-size: larger;
+  margin: 0;
 }
 body .passportButton::after {
   font-family: "Font Awesome 5 Free";

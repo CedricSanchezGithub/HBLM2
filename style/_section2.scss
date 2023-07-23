@@ -23,6 +23,7 @@
     flex-direction: column;
     align-items: center;
     justify-items: center;
+    justify-content: space-between;
     color: rgba(238, 238, 238);
     font-size: 1.5rem;
     background: linear-gradient(
@@ -36,7 +37,7 @@
 
     h2 {
       background: var.$color5;
-      height: 100%;
+      height: 100px;
       color: black;
       display: flex;
       flex-direction: column;
@@ -70,6 +71,14 @@
         }
       }
     }
+  }
+  .buttonInscription {
+    display: flex;
+    height: 100px;
+    align-items: center;
+  }
+  .h2Countainer{
+    width: 100%;
   }
   .inscription-right {
     p {
