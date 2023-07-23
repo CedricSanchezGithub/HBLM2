@@ -389,6 +389,9 @@ header .heroPage .menuSlide {
   color: white;
   background: rgba(0, 0, 0, 0.952);
 }
+#section2 p {
+  margin: 10px;
+}
 #section2 .buttonInscription {
   display: flex;
   height: 100px;
@@ -418,7 +421,7 @@ header .heroPage .menuSlide {
 }
 @media screen and (max-width: 1000px) {
   #section3 th {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 #section3 table {
@@ -446,7 +449,7 @@ header .heroPage .menuSlide {
 }
 @media screen and (max-width: 1000px) {
   #section3 table td {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 #section3 table td:empty {
@@ -499,6 +502,45 @@ header .heroPage .menuSlide {
 #section4 table td:nth-child(2),
 #section4 table td:nth-child(3) {
   width: 25%;
+}
+
+.passSportCountainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+  color: rgb(238, 238, 238);
+  font-size: 1.5rem;
+  background: linear-gradient(90deg, rgb(36, 36, 36) 16%, rgb(11, 7, 7) 89%);
+}
+@media screen and (max-width: 1120px) {
+  .passSportCountainer {
+    height: 100vh;
+  }
+}
+.passSportCountainer .passSportHeader {
+  width: 100%;
+}
+.passSportCountainer .passSportHeader h2 {
+  background: #F0E50D;
+  height: 100px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.passSportCountainer .passSportContent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.passSportCountainer .passSportContent p {
+  text-align: center;
+  margin: 10px;
 }
 
 body .arrow-link {
