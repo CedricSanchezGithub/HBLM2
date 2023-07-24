@@ -2,7 +2,6 @@
 
 header {
   height: 100vh;
-
   .header {
     position: sticky;
     top: 0;
@@ -69,183 +68,190 @@ header {
       }
     }
   }
-  .countdownCountainerCountainer {
+  .headerCountainer {
     display: flex;
-    width: 800px;
-    height: 100px;
-    font-size: 2rem;
-    margin: 100px auto;
-    border-radius: 30px;
-    text-shadow: 6px 5px 12px #000000;
-    color: white;
-    background: rgba(0, 0, 0, 0.164);
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
 
-    @media screen and (max-width: 1060px) {
-      position: fixed;
-      width: 100%;
-      border-radius: 0;
-      position: sticky;
-      margin: 0;
-      height: 50px;
-    }
-    @media screen and (max-width: 750px) {
-      display: none;
-    }
-    .secondes {
-      text-align: center;
-    }
-    .chrono {
+    .countdownCountainerCountainer {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      font-size: 0.7rem;
-      img {
-        margin-bottom: 5px;
-        width: 50px;
-      }
-    }
-    .countdownCountainer {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      width: 100%;
-
-      span {
-        font-weight: bold;
-      }
-    }
-  }
-  .heroPage {
-    display: grid;
-    grid-template-columns: 70% 30%;
-    margin: 0 auto;
-    width: 70%;
-    align-items: center;
-    height: 500px;
-    color: white;
-    background: rgba(0, 0, 0, 0.164);
-    border-radius: 30px;
-
-    @media screen and (max-width: 1060px) {
-      height: 80%;
-      justify-content: space-around;
-      margin: 50px auto;
-    }
-    @media screen and (max-width: 750px) {
-      width: 100%;
-      border-radius: 0;
-      height: 100vh;
-      margin: 0;
-    }
-    .section1 {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      font-size: 1.3rem;
+      width: 60%;
+      height: 100px;
+      font-size: 2rem;
+      margin: 0 auto;
+      border-radius: 30px;
       text-shadow: 6px 5px 12px #000000;
+      color: white;
+      background: rgba(0, 0, 0, 0.164);
 
-      @media screen and (max-width: 1400px) {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        justify-items: center;
-        align-items: end;
+      @media screen and (max-width: 1060px) {
+        position: fixed;
+        width: 100%;
+        border-radius: 0;
+        position: sticky;
+        margin: 0;
+        height: 50px;
       }
       @media screen and (max-width: 750px) {
         display: none;
       }
-      > * {
-        margin: 20px;
-        line-height: 25px;
-        justify-content: space-between;
-        @media screen and (max-width: 1400px) {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
-          margin: 0;
-          height: 100%;
-        }
-        &:nth-child(2) {
-          @media screen and (max-width: 1400px) {
-            width: 80%;
-          }
-        }
-        h2 {
-          @media screen and (max-width: 800px) {
-            text-align: center;
-            font-size: 2rem;
-          }
-        }
-      }
-    }
-    h1 {
-      font-family: var.$font1;
-      font-size: 5.5rem;
-      color: var.$color3;
-      font-weight: 800;
-      margin: 20px;
-      line-height: 100px;
-      text-shadow: 6px 5px 12px #000000;
-      color: white;
-      letter-spacing: 2px;
-
-      @media screen and (max-width: 1400px) {
+      .secondes {
         text-align: center;
-        font-size: 4rem;
-        
-        @media screen and (max-width: 730px) {
-          font-size: 3rem;
-          margin: 0;
-          line-height: normal;
-        }
       }
-      &:hover span {
-        text-shadow: 6px 5px 12px var.$color5;
-      }
-      span {
-        transition: text-shadow 0.4s ease-in-out;
-      }
-    }
-    @media screen and (max-width: 1400px) {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .section1Responsive {
-      display: none;
-      @media screen and (max-width: 730px) {
-        font-family: var.$font2;
+      .chrono {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        height: 80%;
-        width: 100%;
+        justify-content: center;
         align-items: center;
-        font-size: 2rem;
-        background: #0000003f;
-        h2 {
-          width: 100%;
-          height: 100%;
-          a {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            cursor: pointer;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            box-shadow: inset 1px 1px 5px 0px #181818;
+        font-size: 0.7rem;
+        img {
+          margin-bottom: 5px;
+          width: 50px;
+        }
+      }
+      .countdownCountainer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
 
-            &:hover {
-              box-shadow: 7px 7px 16px 6px #181818;
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+    .heroPage {
+      display: grid;
+      grid-template-columns: 70% 30%;
+      margin: 0 auto;
+      width: 70%;
+      align-items: center;
+      height: 500px;
+      color: white;
+      background: rgba(0, 0, 0, 0.164);
+      border-radius: 30px;
+
+      @media screen and (max-width: 1060px) {
+        height: 80%;
+        justify-content: space-around;
+        margin: 50px auto;
+      }
+      @media screen and (max-width: 750px) {
+        width: 100%;
+        border-radius: 0;
+        height: 100vh;
+        margin: 0;
+      }
+      .section1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 1.3rem;
+        text-shadow: 6px 5px 12px #000000;
+
+        @media screen and (max-width: 1400px) {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          justify-items: center;
+          align-items: end;
+        }
+        @media screen and (max-width: 750px) {
+          display: none;
+        }
+        > * {
+          margin: 20px;
+          line-height: 25px;
+          justify-content: space-between;
+          @media screen and (max-width: 1400px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+            height: 100%;
+          }
+          &:nth-child(2) {
+            @media screen and (max-width: 1400px) {
+              width: 80%;
+            }
+          }
+          h2 {
+            @media screen and (max-width: 800px) {
+              text-align: center;
+              font-size: 2rem;
             }
           }
         }
       }
-    }
-    .menuSlide {
-      height: 20px;
+      h1 {
+        font-family: var.$font1;
+        font-size: 5.5rem;
+        color: var.$color3;
+        font-weight: 800;
+        margin: 20px;
+        line-height: 100px;
+        text-shadow: 6px 5px 12px #000000;
+        color: white;
+        letter-spacing: 2px;
+
+        @media screen and (max-width: 1400px) {
+          text-align: center;
+          font-size: 4rem;
+
+          @media screen and (max-width: 730px) {
+            font-size: 3rem;
+            margin: 0;
+            line-height: normal;
+          }
+        }
+        &:hover span {
+          text-shadow: 6px 5px 12px var.$color5;
+        }
+        span {
+          transition: text-shadow 0.4s ease-in-out;
+        }
+      }
+      @media screen and (max-width: 1400px) {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .section1Responsive {
+        display: none;
+        @media screen and (max-width: 730px) {
+          font-family: var.$font2;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          height: 80%;
+          width: 100%;
+          align-items: center;
+          font-size: 2rem;
+          background: #0000003f;
+          h2 {
+            width: 100%;
+            height: 100%;
+            a {
+              display: flex;
+              align-items: center;
+              justify-content: space-around;
+              cursor: pointer;
+              width: 100%;
+              height: 100%;
+              text-align: center;
+              box-shadow: inset 1px 1px 5px 0px #181818;
+
+              &:hover {
+                box-shadow: 7px 7px 16px 6px #181818;
+              }
+            }
+          }
+        }
+      }
+      .menuSlide {
+        height: 20px;
+      }
     }
   }
 }
