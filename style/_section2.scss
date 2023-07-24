@@ -3,7 +3,7 @@
 // Section inscription
 
 #section2 {
-  color: rgb(2, 2, 2);
+  height: 100vh;
   @include var.section;
   width: 70%;
   margin: 0 auto;
@@ -26,8 +26,10 @@
     align-items: center;
     justify-items: center;
     justify-content: space-between;
+    height: 100%;
     border-radius: 30px;
     box-shadow: 5px 3px 9px 1px black;
+    line-height: 30px;
 
     color: rgba(238, 238, 238);
     font-size: 1.5rem;
