@@ -621,14 +621,10 @@ body .arrow-link:hover {
   box-shadow: 0px 0px 20px 3px rgb(255, 239, 68);
   background: linear-gradient(90deg, rgb(36, 36, 36) 16%, rgb(11, 7, 7) 89%);
 }
-body .arrow-link:hover::after {
-  transform: translate(20px);
-}
 body .arrow-link::after {
   font-family: "Font Awesome 5 Free";
   content: "\f063";
   display: inline-block;
-  transition: all 0.3s ease;
 }
 body .passportButton {
   display: flex;
@@ -638,10 +634,14 @@ body .passportButton {
   height: 50px;
   margin: 0;
 }
+body .passportButton:hover::after {
+  transform: translate(20px);
+}
 body .passportButton::after {
   font-family: "Font Awesome 5 Free";
   content: "\f061";
   display: inline-block;
+  transition: all 0.3s ease;
 }
 
 .partenaires {
