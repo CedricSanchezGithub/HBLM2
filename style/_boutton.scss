@@ -7,25 +7,33 @@ body {
     padding: 3px 10px;
     color: var.$color3;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.5rem;
     border-radius: 300px;
     border: var.$border;
     transition: all 0.3s ease;
-    box-shadow: 7px 4px 7px 3px rgba(0, 0, 0, 0.38);
+    box-shadow: 0px 0px 7px 0px rgb(255, 239, 68);
     margin-top: 10px;
     text-shadow: none;
 
     &:hover {
       color: white;
-      background: rgba(0, 0, 0, 0.952);
-      border: var.$border2;
-      transform: scale(1.1);
-      box-shadow:  7px 4px 7px 3px #c5c525;
+      transform: scale(1.05);
+      box-shadow:  0px 0px 20px 3px rgb(255, 239, 68);
+      background: linear-gradient(
+        90deg,
+        rgba(36, 36, 36, 1) 16%,
+        rgba(11, 7, 7, 1) 89%
+      );
+      &::after {
+       transform: translate(20px);
+      }
     }
     &::after {
       font-family: "Font Awesome 5 Free";
       content: "\f063";
       display: inline-block;
+      transition: all 0.3s ease;
+
     }
   }
   .passportButton{
@@ -34,7 +42,6 @@ body {
     width: 300px;
     align-items: center;
     height: 50px;
-    font-size: larger;
     margin: 0;
 
     &::after {
