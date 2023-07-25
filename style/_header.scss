@@ -116,7 +116,8 @@ header {
         width: 100%;
         img{
           width: 150px;
-          background: var.$color2;
+          background: rgba(238, 238, 238);
+          box-shadow: 0 0 12px 4px rgb(36, 36, 36);
           border-radius: 20px;
         }
 
