@@ -1,5 +1,13 @@
-// footer{
-//     .footer{
-        
-//     }
-// }
+footer{
+    margin-top: 50px;
+    .footer{
+        position: sticky;
+        display: flex;
+        bottom: 0;
+        height: 400px;
+        background: linear-gradient(
+            90deg,
+            rgba(36, 36, 36, 1) 16%,
+            rgba(11, 7, 7, 1) 89%
+          );    }
+}
