@@ -1,8 +1,6 @@
 footer {
-  margin-top: 50px;
   height: 300px;
   color: white;
-  box-shadow: 5px 3px 9px 1px black;
 
   .footer {
     display: flex;
@@ -15,6 +13,11 @@ footer {
       rgba(36, 36, 36, 1) 16%,
       rgba(11, 7, 7, 1) 89%
     );
+    @media screen and (max-width: 1000px) {
+      padding: 10px;
+      height: auto;
+
+    }
     > * {
       @media screen and (max-width: 1000px) {
         padding: 10px;
