@@ -44,7 +44,7 @@ header {
         li {
           transition: transform 0.2s;
           display: inline-block;
-          &:hover{
+          &:hover {
             transform: scale(1.2);
           }
           a {
@@ -114,11 +114,16 @@ header {
         justify-content: space-evenly;
         align-items: center;
         width: 100%;
-        img{
+        img {
           width: 150px;
           background: rgba(238, 238, 238);
           box-shadow: 0 0 12px 4px rgb(36, 36, 36);
           border-radius: 20px;
+          @media screen and (max-width: 1060px) {
+            box-shadow: none;
+            border-radius: 0;
+            height: 100%;
+          }
         }
 
         span {
@@ -182,11 +187,18 @@ header {
             }
           }
           h2 {
-            @media screen and (max-width: 800px) {
+            @media screen and (max-width: 750px) {
               text-align: center;
               font-size: 2rem;
             }
           }
+        }
+      }
+      img{
+        display: none;
+        @media screen and (max-width: 750px) {
+          display: block;
+          padding: 10px;
         }
       }
       h1 {
@@ -204,14 +216,9 @@ header {
           text-align: center;
           font-size: 4rem;
 
-          @media screen and (max-width: 730px) {
-            font-size: 3rem;
-            margin: 0;
-            line-height: normal;
+          @media screen and (max-width: 750px) {
+            display: none;
           }
-        }
-        &:hover span {
-          text-shadow: 6px 5px 12px var.$color5;
         }
         span {
           transition: text-shadow 0.4s ease-in-out;
@@ -224,7 +231,7 @@ header {
 
       .section1Responsive {
         display: none;
-        @media screen and (max-width: 730px) {
+        @media screen and (max-width: 750px) {
           font-family: var.$font2;
           display: flex;
           flex-direction: column;

@@ -47,7 +47,6 @@ let timer = setInterval(function () {
 addEventListener("scroll", () => {
   const menu = document.querySelector(".header");
   const scrollY = window.scrollY;
-  console.log(scrollY);
   if (scrollY > 100) {
     menu.style.height = "20px";
   }
@@ -55,7 +54,6 @@ addEventListener("scroll", () => {
 addEventListener("scroll", () => {
   const menu = document.querySelector(".header");
   const scrollY = window.scrollY;
-  console.log(scrollY);
   if (scrollY === 0) {
     menu.style.height = "";
   }
