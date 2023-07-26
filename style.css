@@ -864,19 +864,19 @@ footer .footer img:hover {
 }
 .gymnasesContainer .gymnases .gymnasesLeft .gymnasesLeftTop,
 .gymnasesContainer .gymnases .gymnasesRight .gymnasesLeftTop {
-  background: url(../layouts/Gymnases/arnassan.png) center/cover;
+  background: url(./layouts/Gymnases/arnassan.png) center/cover;
 }
 .gymnasesContainer .gymnases .gymnasesLeft .gymnasesLeftbot,
 .gymnasesContainer .gymnases .gymnasesRight .gymnasesLeftbot {
-  background: url(../layouts/Gymnases/spinosi.png) center/cover;
+  background: url(./layouts/Gymnases/spinosi.png) center/cover;
 }
 .gymnasesContainer .gymnases .gymnasesLeft .gymnasesRightTop,
 .gymnasesContainer .gymnases .gymnasesRight .gymnasesRightTop {
-  background: url(../layouts/Gymnases/collège.png) center/cover;
+  background: url(./layouts/Gymnases/collège.png) center/cover;
 }
 .gymnasesContainer .gymnases .gymnasesLeft .gymnasesRightBot,
 .gymnasesContainer .gymnases .gymnasesRight .gymnasesRightBot {
-  background: url(../layouts/Gymnases/hall.png) center/cover;
+  background: url(./layouts/Gymnases/hall.png) center/cover;
 }
 .gymnasesContainer .gymnases .adress {
   color: white;
