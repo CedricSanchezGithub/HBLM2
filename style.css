@@ -460,6 +460,7 @@ header .headerCountainer .heroPage .menuSlide {
   }
 }
 #section3 th {
+  padding: 20px;
   font-size: 2rem;
   color: white;
   background: linear-gradient(90deg, rgb(36, 36, 36) 16%, rgb(11, 7, 7) 89%);
@@ -526,6 +527,7 @@ header .headerCountainer .heroPage .menuSlide {
   }
 }
 #section4 th {
+  padding: 20px;
   font-size: 2rem;
   color: white;
   background: linear-gradient(90deg, rgb(36, 36, 36) 16%, rgb(11, 7, 7) 89%);
@@ -769,10 +771,9 @@ footer {
   box-shadow: 5px 3px 9px 1px black;
 }
 footer .footer {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: space-evenly;
   width: 100%;
   height: 300px;
   background: linear-gradient(90deg, rgb(36, 36, 36) 16%, rgb(11, 7, 7) 89%);
@@ -820,6 +821,66 @@ footer .footer img {
   transform: scale(1.3);
 }
 
+.gymnasesContainer {
+  height: 300px;
+  width: 100%;
+  margin: 50px 0;
+  box-shadow: 0px 0px 20px 1px black;
+}
+.gymnasesContainer .gymnases {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  background: rgb(238, 238, 238);
+  height: 100%;
+}
+.gymnasesContainer .gymnases .gymnasesLeft,
+.gymnasesContainer .gymnases .gymnasesRight {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+}
+.gymnasesContainer .gymnases .gymnasesLeft .gymnasesLeftTop,
+.gymnasesContainer .gymnases .gymnasesRight .gymnasesLeftTop {
+  background: url(../layouts/Gymnases/arnassan.png) center/cover;
+}
+.gymnasesContainer .gymnases .gymnasesLeft .gymnasesLeftbot,
+.gymnasesContainer .gymnases .gymnasesRight .gymnasesLeftbot {
+  background: url(../layouts/Gymnases/spinosi.png) center/cover;
+}
+.gymnasesContainer .gymnases .gymnasesLeft .gymnasesRightTop,
+.gymnasesContainer .gymnases .gymnasesRight .gymnasesRightTop {
+  background: url(../layouts/Gymnases/collège.png) center/cover;
+}
+.gymnasesContainer .gymnases .gymnasesLeft .gymnasesRightBot,
+.gymnasesContainer .gymnases .gymnasesRight .gymnasesRightBot {
+  background: url(../layouts/Gymnases/hall.png) center/cover;
+}
+.gymnasesContainer .gymnases .adress {
+  color: white;
+  text-shadow: 9px 4px 11px black;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 0px 20px 1px black;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+.gymnasesContainer .gymnases .adress:hover {
+  transform: scale(1.3);
+}
+.gymnasesContainer .gymnases .adress h3 {
+  font-size: 1.5rem;
+}
+
 .partenairesCountainer {
   display: flex;
   align-items: center;
@@ -854,14 +915,16 @@ footer .footer img {
   transform: scale(1.3);
   filter: grayscale(0%);
 }
-.partenairesCountainer .partenaires .part1, .partenairesCountainer .partenaires .part2 {
+.partenairesCountainer .partenaires .part1,
+.partenairesCountainer .partenaires .part2 {
   padding: 10px 0;
   display: flex;
   width: 50%;
   justify-content: space-around;
 }
 @media screen and (max-width: 1000px) {
-  .partenairesCountainer .partenaires .part1, .partenairesCountainer .partenaires .part2 {
+  .partenairesCountainer .partenaires .part1,
+  .partenairesCountainer .partenaires .part2 {
     width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
