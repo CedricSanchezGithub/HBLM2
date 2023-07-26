@@ -115,9 +115,7 @@ header {
         align-items: center;
         width: 100%;
         img {
-          width: 150px;
-          background: rgba(238, 238, 238);
-          box-shadow: 0 0 12px 4px rgb(36, 36, 36);
+          width: 200px;
           border-radius: 20px;
           @media screen and (max-width: 1060px) {
             box-shadow: none;
