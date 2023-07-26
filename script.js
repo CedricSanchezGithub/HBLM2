@@ -1,20 +1,20 @@
-// const image = document.querySelector('.HBlogo');
-// let isListening = true;
+const image = document.querySelector('.HBlogo');
+let isListening = true;
 
-// function crisLion() {
-//   if (isListening) {
-//     const audio = new Audio('layouts/lion.mp3');
-//     audio.play();
-//     console.log("rawr");
-//     isListening = false;
+function crisLion() {
+  if (isListening) {
+    const audio = new Audio('layouts/lion.mp3');
+    audio.play();
+    console.log("rawr");
+    isListening = false;
 
-//     setTimeout(() => {
-//       isListening = true;
-//     }, 6000);
-//   }
-// }
+    setTimeout(() => {
+      isListening = true;
+    }, 6000);
+  }
+}
 
-// image.addEventListener("mouseenter", crisLion);
+image.addEventListener("mouseenter", crisLion);
 
 const endDate = new Date("Sep 4, 2023 00:00:00").getTime();
 
