@@ -711,17 +711,44 @@ footer .footer .network i {
 .partenairesCountainer {
   display: flex;
   align-items: center;
-  height: 400px;
+  height: 300px;
   background: rgb(238, 238, 238);
+}
+@media screen and (max-width: 1000px) {
+  .partenairesCountainer {
+    height: 200px;
+  }
 }
 .partenairesCountainer .partenaires {
   width: 100%;
-  height: 200px;
-  margin: 50px 0;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 .partenairesCountainer .partenaires img {
-  width: 20%;
   opacity: 0.6;
+  width: 120px;
+  transition: all 0.4s ease;
+  filter: grayscale(100%);
+}
+@media screen and (max-width: 1000px) {
+  .partenairesCountainer .partenaires img {
+    width: 50px;
+  }
+}
+.partenairesCountainer .partenaires img:hover {
+  opacity: 1;
+  transform: scale(1.3);
+  filter: grayscale(0%);
+}
+.partenairesCountainer .partenaires .part1, .partenairesCountainer .partenaires .part2 {
+  padding: 10px 0;
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+@media screen and (max-width: 1000px) {
+  .partenairesCountainer .partenaires .part1, .partenairesCountainer .partenaires .part2 {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
