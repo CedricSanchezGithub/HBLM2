@@ -826,6 +826,11 @@ footer .footer .network i {
 }
 footer .footer img {
   width: 200px;
+  transition: transform 0.4s ease;
+}
+footer .footer img:hover {
+  transform: scale(1.2);
+  transform: rotate(20deg);
 }
 
 .mailto {
