@@ -476,6 +476,7 @@ header .headerCountainer .heroPage .menuSlide {
 @media screen and (max-width: 1120px) {
   #section3 th {
     font-size: 1rem;
+    padding: 0;
   }
 }
 #section3 table {
