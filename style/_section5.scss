@@ -33,13 +33,13 @@
     background: linear-gradient(
       90deg,
       rgba(36, 36, 36, 1) 16%,
-      rgba(11, 7, 7, 1) 89%);
+      rgba(11, 7, 7, 1) 89%
+    );
     @media screen and (max-width: 1120px) {
       height: 100vh;
     }
     @media screen and (max-width: 600px) {
       font-size: 1rem;
-      
     }
 
     h2 {
@@ -63,17 +63,17 @@
       font-weight: bold;
       font-size: 2rem;
     }
-    .passportButton{
+    .passportButton {
       margin-bottom: 20px;
     }
   }
-  .section5CountainerRight{
+  .section5CountainerRight {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    img{
-      width: 50%; 
+    img {
+      width: 50%;
     }
   }
   p {
@@ -82,5 +82,8 @@
   .buttonInscription {
     display: flex;
     height: 100px;
+  }
+  .passportButton {
+    margin-bottom: 100px !important;
   }
 }

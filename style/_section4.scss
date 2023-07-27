@@ -4,7 +4,7 @@
   margin: 0 auto;
   width: 70%;
   padding: 50px 0;
-  
+
   @media screen and (max-width: 1000px) {
     padding: 0;
     width: 100%;
@@ -63,6 +63,7 @@
       width: 25%;
     }
   }
+
 }
 .passSportCountainer2 {
   width: 70%;
@@ -70,7 +71,6 @@
   padding: 50px 0;
   @media screen and (max-width: 1000px) {
     width: 100%;
-
   }
 }
 
@@ -132,12 +132,10 @@
       font-size: 2rem;
       @media screen and (max-width: 600px) {
         font-size: 1rem;
-        
       }
     }
   }
   @media screen and (max-width: 500px) {
     font-size: 1rem;
-    
   }
 }

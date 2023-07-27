@@ -42,22 +42,6 @@ let timer = setInterval(function () {
 }, 1000);
 
 
-// // ** LE HEADER MOCHE
-// addEventListener("scroll", () => {
-//   const menu = document.querySelector(".header");
-//   const scrollY = window.scrollY;
-//   if (scrollY > 100) {
-//     menu.style.height = "20px";
-//   }
-// });
-// addEventListener("scroll", () => {
-//   const menu = document.querySelector(".header");
-//   const scrollY = window.scrollY;
-//   if (scrollY === 0) {
-//     menu.style.height = "";
-//   }
-// });
-
 
 // ** LA FLECHE SCROLL UP
 let mybutton = document.getElementById("scrollUp");
@@ -74,11 +58,4 @@ function scrollFunction() {
   }
 }
 
-function goUp() {
-  if (isListening) {
-    console.log("click");
-  }
-}
 
-
-image.addEventListener("click", goUp);
