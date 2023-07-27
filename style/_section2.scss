@@ -41,6 +41,9 @@
     @media screen and (max-width: 1120px) {
       height: 100vh;
     }
+    @media screen and (max-width: 900px) {
+      font-size: 1rem;
+    }
 
     h2 {
       background: rgb(255, 242, 92);
@@ -88,6 +91,10 @@
     span{
       font-weight: bold;
       font-size: 2rem;
+      @media screen and (max-width: 600px) {
+        font-size: 1rem;
+        
+      }
     }
     ul li i {
       color: #dfd451;

@@ -19,6 +19,11 @@ body {
   font-family: "Oswald", sans-serif;
 }
 
+section {
+  background: rgb(236, 236, 236);
+  background: linear-gradient(90deg, rgb(236, 236, 236) 30%, rgb(238, 238, 238) 75%);
+}
+
 a {
   text-decoration: none;
   color: whitesmoke;
@@ -101,7 +106,7 @@ header .header .menu ul li a::after {
   content: "";
   width: 100%;
   height: 5px;
-  background: #F0E50D;
+  background: #f0e50d;
   transition: all 0.2s ease;
   left: -100px;
   opacity: 0;
@@ -117,7 +122,7 @@ header .headerCountainer {
   justify-content: space-evenly;
   height: 100%;
 }
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1360px) {
   header .headerCountainer {
     justify-content: space-between;
   }
@@ -200,7 +205,7 @@ header .headerCountainer .heroPage {
   header .headerCountainer .heroPage {
     width: 100%;
     border-radius: 0;
-    height: 100vh;
+    height: 100%;
     margin: 0;
   }
 }
@@ -379,6 +384,12 @@ header .headerCountainer .heroPage .menuSlide {
     height: 100vh;
   }
 }
+@media screen and (max-width: 900px) {
+  #section2 .inscription-left,
+  #section2 .inscription-right {
+    font-size: 1rem;
+  }
+}
 #section2 .inscription-left h2,
 #section2 .inscription-right h2 {
   background: rgb(255, 242, 92);
@@ -427,6 +438,12 @@ header .headerCountainer .heroPage .menuSlide {
 #section2 .inscription-right span {
   font-weight: bold;
   font-size: 2rem;
+}
+@media screen and (max-width: 600px) {
+  #section2 .inscription-left span,
+  #section2 .inscription-right span {
+    font-size: 1rem;
+  }
 }
 #section2 .inscription-left ul li i,
 #section2 .inscription-right ul li i {
@@ -530,6 +547,7 @@ header .headerCountainer .heroPage .menuSlide {
   #section4 {
     padding: 0;
     width: 100%;
+    font-size: 1rem;
   }
 }
 #section4 th {
@@ -643,9 +661,20 @@ header .headerCountainer .heroPage .menuSlide {
 .passSportCountainer .passSportContent span {
   font-size: 2rem;
 }
+@media screen and (max-width: 600px) {
+  .passSportCountainer .passSportContent span {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .passSportCountainer {
+    font-size: 1rem;
+  }
+}
 
 #section5 {
   height: 100vh;
+  padding: 50px 0;
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -693,6 +722,12 @@ header .headerCountainer .heroPage .menuSlide {
   #section5 .section5CountainerLeft,
   #section5 .section5CountainerRight {
     height: 100vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  #section5 .section5CountainerLeft,
+  #section5 .section5CountainerRight {
+    font-size: 1rem;
   }
 }
 #section5 .section5CountainerLeft h2,
@@ -831,7 +866,7 @@ footer .footer img {
 }
 footer .footer img:hover {
   transform: scale(1.2);
-  transform: rotate(20deg);
+  transform: rotate(-20deg);
 }
 
 .mailto {
@@ -900,6 +935,11 @@ footer .footer img:hover {
 }
 .gymnasesContainer .gymnases .adress h3 {
   font-size: 1.5rem;
+}
+@media screen and (max-width: 600px) {
+  .gymnasesContainer .gymnases .adress h3 {
+    font-size: 1rem;
+  }
 }
 
 .partenairesCountainer {

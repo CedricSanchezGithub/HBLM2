@@ -16,7 +16,6 @@ footer {
     @media screen and (max-width: 1000px) {
       padding: 10px;
       height: auto;
-
     }
     > * {
       @media screen and (max-width: 1000px) {
@@ -50,9 +49,9 @@ footer {
     img {
       width: 200px;
       transition: transform 0.4s ease;
-      &:hover{
+      &:hover {
         transform: scale(1.2);
-        transform: rotate(20deg);
+        transform: rotate(-20deg);
       }
     }
   }
