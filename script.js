@@ -1,9 +1,9 @@
-const image = document.querySelector('.HBlogo');
-let isListening = true;
-
+// ** LE RAWR DU LION **
+const image = document.querySelector(".HBlogo");
 function crisLion() {
+  let isListening = true;
   if (isListening) {
-    const audio = new Audio('layouts/lion.mp3');
+    const audio = new Audio("layouts/lion.mp3");
     audio.play();
     console.log("rawr");
     isListening = false;
@@ -14,11 +14,11 @@ function crisLion() {
   }
 }
 
-image.addEventListener("mouseenter", crisLion);
+image.addEventListener("click", crisLion);
 
+// ** LE TIMER 
 const endDate = new Date("Sep 4, 2023 00:00:00").getTime();
 
-// Mettre à jour le compte à rebours toutes les secondes
 let timer = setInterval(function () {
   let now = new Date().getTime();
   let t = endDate - now;
@@ -27,23 +27,22 @@ let timer = setInterval(function () {
     let days = Math.floor(t / (1000 * 60 * 60 * 24));
     let hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     let minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
-    let seconds = Math.floor((t % (1000 * 60)) / 1000); // Ajoutez cette ligne
+    let seconds = Math.floor((t % (1000 * 60)) / 1000);
 
     document.getElementById(
       "countdown"
     ).innerHTML = ` <p><span>${days}</span> jours  
                     <span>${hours}</span> heures 
                     <span>${minutes}</span> minutes
-                    <span>${seconds}</span> secondes</p>`; // Ajoutez les secondes ici
-  }
-
-  // Si le compte à rebours est terminé,écrire un texte d'achèvement
-  else {
+                    <span>${seconds}</span> secondes</p>`;
+  } else {
     document.getElementById("countdown").innerHTML = "C'est aujourd'hui !";
     clearInterval(timer);
   }
 }, 1000);
 
+
+// ** LE HEADER MOCHE
 addEventListener("scroll", () => {
   const menu = document.querySelector(".header");
   const scrollY = window.scrollY;
@@ -58,3 +57,28 @@ addEventListener("scroll", () => {
     menu.style.height = "";
   }
 });
+
+
+// ** LA FLECHE SCROLL UP
+let mybutton = document.getElementById("scrollUp");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function goUp() {
+  if (isListening) {
+    console.log("click");
+  }
+}
+
+
+image.addEventListener("click", goUp);

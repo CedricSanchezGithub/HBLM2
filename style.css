@@ -809,6 +809,20 @@ body .passportButton::after {
   display: inline-block;
   transition: all 0.3s ease;
 }
+body #scrollUp {
+  position: fixed;
+  display: none;
+  bottom: 50px;
+  right: 50px;
+  z-index: 200;
+  transform: scale(4);
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+body #scrollUp:hover {
+  transform: scale(5);
+}
 
 footer {
   height: 300px;
@@ -878,7 +892,7 @@ footer .footer img:hover {
 
 .gymnasesContainer {
   width: 100%;
-  margin-top: 50px;
+  padding: 50px 0;
 }
 .gymnasesContainer .gymnases {
   display: flex;
@@ -946,7 +960,7 @@ footer .footer img:hover {
   display: flex;
   align-items: center;
   background: rgb(238, 238, 238);
-  padding: 40px;
+  padding: 50px 0 100px 0;
 }
 @media screen and (max-width: 1000px) {
   .partenairesCountainer {
