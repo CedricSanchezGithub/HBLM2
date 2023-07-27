@@ -19,11 +19,11 @@
       <div class="header">
         <div class="menu">
           <ul>
-            <li><a href="#section1">Accueil</a></li>
+            <li><a href="#section1" id="acceuil">Accueil</a></li>
             <li><a href="#section2">Inscription</a></li>
             <li><a href="#section3">Planning</a></li>
-            <li><a href="#section4">Stage Vacances</a></li>
             <li><a href="#section4">Tarifs</a></li>
+            <li><a href="#section5">Stage Vacances</a></li>
           </ul>
         </div>
       </div>
@@ -141,7 +141,7 @@
               <div class="buttonInscription">
                 <a
                   class="arrow-link passportButton"
-                  href="./2022-23_Certificat_médical.pdf"
+                  href="./layouts/2022-23_Certificat_médical.pdf"
                   target="_blank"
                   >Certificat médical</a
                 >
@@ -252,6 +252,47 @@
               <td></td>
             </tr>
           </table>
+          <table>
+            <tr>
+              <th colspan="4">FILIÈRE MASCULINE EN COMPÉTITION</th>
+            </tr>
+            <tr>
+              <th>Equipe</th>
+              <th>Entraînement 1</th>
+              <th>Entraînement 2</th>
+              <th>Entraînement 3</th>
+            </tr>
+            <tr>
+              <td>-13M <br />2012-2011</td>
+              <td>Groupe 1 & 2 <br />Mardi <br />19h-20h30 <br />Lunel</td>
+              <td>
+                Groupe 2 <br />Mercredi <br />17h30-19h <br />Marsillargues
+              </td>
+              <td>Groupe 1 <br />Jeudi <br />17h30-19h <br />Lunel</td>
+            </tr>
+            <tr>
+              <td>-15M <br />2010-2009</td>
+              <td>
+                Groupe 1 & 2 <br />Mardi <br />18h30-20h <br />Marsillargues
+              </td>
+              <td>Groupe 2 <br />Mercredi <br />19h-20h30 <br />Lunel</td>
+              <td>Groupe 1 <br />Vendredi <br />19h-20h30 <br />Lunel</td>
+            </tr>
+            <tr>
+              <td>-18M <br />2008-2007-2006</td>
+              <td>Groupe 1 & 2 <br />Lundi <br />19h30-21h <br />Lunel</td>
+              <td>Groupe 1 <br />Jeudi <br />20h30-22h <br />Lunel</td>
+              <td>
+                Groupe 2 <br />Vendredi <br />19h-20h30 <br />Marsillargues
+              </td>
+            </tr>
+            <tr>
+              <td>SG <br />2005 et avant</td>
+              <td>Mardi <br />20h30-22h30 <br />Lunel</td>
+              <td>Vendredi <br />20h30-22h30 <br />Lunel</td>
+              <td></td>
+            </tr>
+          </table>
         </div>
       </section>
       <section>
@@ -260,8 +301,7 @@
             <thead>
               <tr>
                 <th colspan="4">
-                  Réduction de -10€ par licence à partir de 2 licences, <br />
-                  dans un même foyer pour toutes et tous
+                  Réduction de -10€ par licence à partir de 2 licences
                 </th>
               </tr>
               <tr>
@@ -276,22 +316,22 @@
               <tr>
                 <td>Loisir Adulte</td>
                 <td>155 €</td>
-                <td><img src="./maillots.svg" alt="Maillot" /></td>
+                <td><img src="./layouts/maillots.svg" alt="Maillot" /></td>
               </tr>
               <tr>
                 <td>-11 <br />(2014-2013)</td>
                 <td>180 €</td>
-                <td><img src="./maillots.svg" alt="Maillot" /></td>
+                <td><img src="./layouts/maillots.svg" alt="Maillot" /></td>
               </tr>
               <tr>
                 <td>-13 <br />(2012-2011)</td>
                 <td>195 €</td>
-                <td><img src="./maillots.svg" alt="Maillot" /></td>
+                <td><img src="./layouts/maillots.svg" alt="Maillot" /></td>
               </tr>
               <tr>
                 <td>-15 <br />(2010-2009)</td>
                 <td>205 €</td>
-                <td><img src="./maillots.svg" alt="Maillot" /></td>
+                <td><img src="./layouts/maillots.svg" alt="Maillot" /></td>
               </tr>
               <tr>
                 <td>
@@ -299,12 +339,12 @@
                   (2008-2006)
                 </td>
                 <td>215 €</td>
-                <td><img src="./maillots.svg" alt="Maillot" /></td>
+                <td><img src="./layouts/maillots.svg" alt="Maillot" /></td>
               </tr>
               <tr>
                 <td>Sénior</td>
                 <td>230 €</td>
-                <td><img src="./maillots.svg" alt="Maillot" /></td>
+                <td><img src="./layouts/maillots.svg" alt="Maillot" /></td>
               </tr>
             </tbody>
           </table>
@@ -510,7 +550,7 @@
       </div>
     </footer>
     <div class="transitionScrollup">
-      <i class="fa-regular fa-circle-up" id="scrollUp"></i>
+      <a href="#acceuil"><i class="fa-regular fa-circle-up" id="scrollUp"></i></a>
     </div>
     <script src="script.js"></script>
   </body>

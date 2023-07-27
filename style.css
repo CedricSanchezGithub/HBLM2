@@ -14,8 +14,12 @@
   list-style: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: url(./hblm.png) center/cover fixed;
+  background: url(./layouts/hblm.png) center/cover fixed;
   font-family: "Oswald", sans-serif;
 }
 
@@ -47,8 +51,6 @@ header {
   height: 100vh;
 }
 header .header {
-  position: sticky;
-  top: 0;
   display: flex;
   width: 70%;
   padding: 20px 20px 20px 20px;
@@ -566,7 +568,6 @@ header .headerCountainer .heroPage .menuSlide {
 }
 #section4 table {
   width: 100%;
-  height: 100vh;
   margin: 0 auto;
   border-spacing: 10px;
 }
@@ -819,6 +820,7 @@ body #scrollUp {
   opacity: 0.5;
   cursor: pointer;
   transition: all 0.3s ease;
+  color: grey;
 }
 body #scrollUp:hover {
   transform: scale(5);
@@ -914,19 +916,19 @@ footer .footer img:hover {
 }
 .gymnasesContainer .gymnases .gymnasesLeft .gymnasesLeftTop,
 .gymnasesContainer .gymnases .gymnasesRight .gymnasesLeftTop {
-  background: url(./layouts/Gymnases/arnassan.png) center/cover;
+  background: url(./layouts/Gymnases/arnassan.svg) center/cover;
 }
 .gymnasesContainer .gymnases .gymnasesLeft .gymnasesLeftbot,
 .gymnasesContainer .gymnases .gymnasesRight .gymnasesLeftbot {
-  background: url(./layouts/Gymnases/spinosi.png) center/cover;
+  background: url(./layouts/Gymnases/spinosi.svg) center/cover;
 }
 .gymnasesContainer .gymnases .gymnasesLeft .gymnasesRightTop,
 .gymnasesContainer .gymnases .gymnasesRight .gymnasesRightTop {
-  background: url(./layouts/Gymnases/collège.png) center/cover;
+  background: url(./layouts/Gymnases/college.svg) center/cover;
 }
 .gymnasesContainer .gymnases .gymnasesLeft .gymnasesRightBot,
 .gymnasesContainer .gymnases .gymnasesRight .gymnasesRightBot {
-  background: url(./layouts/Gymnases/hall.png) center/cover;
+  background: url(./layouts/Gymnases/hall.svg) center/cover;
 }
 .gymnasesContainer .gymnases .adress {
   color: white;

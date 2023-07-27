@@ -59,6 +59,7 @@ body {
       opacity: 0.5;
       cursor: pointer;
       transition: all 0.3s ease;
+      color: grey;
     &:hover{
       transform: scale(5);
     }

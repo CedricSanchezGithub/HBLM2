@@ -23,8 +23,12 @@ $border2: solid rgba(241, 230, 13) 2px;
   box-sizing: border-box;
   list-style: none;
 }
+html{
+  scroll-behavior: smooth;
+
+}
 body {
-  background: url(./hblm.png) center/cover fixed;
+  background: url(./layouts/hblm.png) center/cover fixed;
   font-family: $font2;
 }
 section {
