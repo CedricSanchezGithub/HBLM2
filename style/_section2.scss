@@ -8,10 +8,10 @@
   width: 70%;
   margin: 0 auto;
   padding: 100px 0;
-  @media screen and (max-width: 1120px) {
+  @media screen and (max-width: 1300px) {
     display: flex;
     flex-direction: column;
-    height: auto;
+height: 100%;
   }
   @media screen and (max-width: 770px) {
     width: 100%;
