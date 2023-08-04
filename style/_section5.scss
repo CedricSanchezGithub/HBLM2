@@ -26,7 +26,7 @@
     justify-content: space-between;
     height: 100%;
     border-radius: 10px;
-    box-shadow: 0px 0px 20px 1px black;
+    box-shadow: var.$boxShadowBlack;
     line-height: 30px;
     color: rgba(238, 238, 238);
     font-size: 1.5rem;
@@ -43,7 +43,7 @@
     }
 
     h2 {
-      background: rgb(255, 242, 92);
+      background: var.$color5;
       background: linear-gradient(
         90deg,
         rgba(255, 242, 92, 1) 49%,

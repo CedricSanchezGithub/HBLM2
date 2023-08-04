@@ -46,7 +46,7 @@ height: 100%;
     }
 
     h2 {
-      background: rgb(255, 242, 92);
+      background: var.$color5;
       background: linear-gradient(
         90deg,
         rgba(255, 242, 92, 1) 49%,
@@ -79,7 +79,7 @@ height: 100%;
         }
         a {
           width: 100%;
-          color: var.$color3;
+          color: var.$color1;
           height: 100%;
           &:hover {
             color: white;
